@@ -4,51 +4,260 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <title>index</title>
   </head>
+  <style>
+    .logo{
+          width: 113px;
+          display: block;
+          /* padding: 0px 0px; */
+          background: url(../assets/images/logo.svg) no-repeat;
+          background-position: center;
+          text-indent: 225px;
+          white-space: nowrap;
+          overflow: hidden;
+          @media(max-width:768px) {
+            width: 48px;
+            text-indent: 50px;
+            padding: 8px 0px;
+          }
+        }
+    .bg-cover{
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .deco-dark-line{
+      width: 200px;
+      border-bottom: 2px solid #141213;
+      @media(max-width:992px) {
+        width: 180px;
+      }
+    }
+    .deco-light-line{
+      width: 200px;
+      border-bottom: 2px solid #FFFFFF;
+      @media(max-width:992px) {
+        width: 180px;
+      }
+    }
+  </style>
   <body>
     <%- include('./layout/header'); -%>
-    <h1 class="index-title">artsearch</h1>
-    <button class="btn btn-outline-danger">btn</button>
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <section class="container mb-md-12 mb-lg-16">
+      <div class="card rounded-0 border-0">
+        <img src="../assets/images/banner.jpg" class="card-img rounded-0" alt="background-image">
+        <div class="card-img-overlay bg-light bg-opacity-75 p-0 d-none d-md-flex align-items-center justify-content-center" style="max-height: 500px;">
+          <div class="card-body text-center">
+            <h2 class="fw-bolder fs-2 mb-6">開啟藝術之門，<br class="d-md-none">探索無盡魅力！</h2>
+            <p class="fs-4 mb-0 lh-sm">Discover Artistry Unbound -<br class="d-md-none"> Embrace the Masterpieces!</p>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+        </div>
+        <div class="text-center py-4 d-md-none">
+          <h2 class="fw-bolder fs-3 mb-3">開啟藝術之門，<br class="d-md-none">探索無盡魅力！</h2>
+          <p class="fs-7 mb-0 lh-sm">Discover Artistry Unbound -<br class="d-md-none"> Embrace the Masterpieces!</p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary-light">
+      <div class="container py-8 py-md-10 py-lg-15 px-7 px-md-0 position-relative">
+        <h2 class="text-primary fs-1 opacity-20 position-absolute top-0 start-md-35 start-lg-30 start-xl-15 translate-middle d-none d-md-block">Searching</h2>
+        <h2 class="fs-3 mb-4 d-md-none">Searching</h2>
+        <form action="#">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-7">
+              <input type="text" class="form-control fs-7 py-4 mb-4 mb-md-0 border-top-md-0 border-start-md-0 border-end-md-0 border-dark bg-primary-light rounded-0" placeholder="搜尋藝術家或作品">
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+              <select class="form-select fs-7 fw-bold py-4 mb-4 mb-md-0 border-top-md-0 border-start-md-0 border-end-md-0 border-dark border-dark bg-primary-light rounded-0" aria-label="Default select example">
+                <option selected>風格</option>
+                <option value="1">藝術家</option>
+                <option value="2">藝術作品</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-3">
+              <button type="submit" class="btn btn-primary text-white fs-7 fw-bold w-100 py-5 px-md-7 d-flex justify-content-between align-items-center">搜尋<span class="material-icons">search</span></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="container py-11 py-lg-14">
+      <div class="row justify-content-between mb-8 mb-md-10">
+        <div class="col-md-8 col-lg-5 px-0 px-md-2">
+          <h2 class="fw-bolder ms-7 ms-md-0">熱門藝術家.</h2>
+          <div class="d-flex flex-column flex-md-row align-items-md-center">
+            <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 me-9">Trending Artists</p>
+            <div class="deco-dark-line"></div>
+          </div>
+        </div>
+        <div class="col-3 d-none d-md-block">
+          <a href="#" class="btn btn-dark fw-bold d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
+        </div>
+      </div>
+      <ul class="row flex-wrap list-unstyled">
+        <li class="col-6 col-md-4 mb-3 mb-md-9">
+          <div class="card">
+            <img src="../assets/images/文森.png" class="card-img" alt="文森-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="stretched-link text-gray-light fs-5 lh-sm">文森·梵谷</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 mb-3 mb-md-9">
+          <div class="card">
+            <img src="../assets/images/洛德.png" class="card-img" alt="洛德-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="stretched-link text-gray-light fs-5 lh-sm">洛德·莫內家</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 mb-3 mb-md-9">
+          <div class="card">
+            <img src="../assets/images/保羅高更.png" class="card-img" alt="保羅高更-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="stretched-link text-gray-light fs-5 lh-sm">保羅·高更</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 mb-3 mb-md-9">
+          <div class="card">
+            <img src="../assets/images/保羅塞尚.png" class="card-img" alt="保羅塞尚-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="stretched-link text-gray-light fs-5 lh-sm">保羅·塞尚</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 mb-3 mb-md-9">
+          <div class="card">
+            <img src="../assets/images/阿爾布雷希特.png" class="card-img" alt="阿爾布雷希特-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="stretched-link text-gray-light fs-5 lh-sm">阿爾布雷希特·杜勒</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 mb-3 mb-md-9">
+          <div class="card">
+            <img src="../assets/images/克林姆.png" class="card-img" alt="克林姆-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="stretched-link text-gray-light fs-5 lh-sm">古斯塔夫·克林姆</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="col-12 d-md-none mt-3 mb-2">
+        <a href="#" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
+      </div>
+    </section>
+    <section class="bg-cover pt-9 pt-md-11 pt-lg-16 pb-11" style="background-image: url(../assets/images/5-熱門作品.png);">
+      <div class="container-fluid px-sm-12 px-lg-14">
+        <div class="row justify-content-between mb-8 mb-md-10">
+          <div class="col px-0 px-lg-2">
+            <h2 class="fw-bolder ms-7 ms-md-0 text-white">熱門作品.</h2>
+            <div class="d-flex flex-column flex-md-row align-items-md-center">
+              <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 me-9 text-white">Trending Artworks</p>
+              <div class="deco-light-line"></div>
+            </div>
+          </div>
+          <!-- <div class="col-3 d-none d-md-block">
+            <div class="d-flex justify-content-end">
+              <a href="#" class="btn btn-light p-4 me-9"><span class="material-icons fs-3 fw-bold align-middle">arrow_back_ios_new</span></a>
+              <a href="#" class="btn btn-light p-4"><span class="material-icons fs-3 fw-bold align-middle">arrow_forward_ios</span></a>
+            </div>
+          </div> -->
+        </div>
+        <div class="row flex-nowrap overflow-scroll px-8 mb-7 mb-md-10">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
+            <div class="card bg-transparent text-light">
+              <span class="text-light fs-6 position-absolute top-10 start-10 translate-middle z-3">Jan Vermeer</span>
+              <img src="../assets/images/戴珍珠耳環.png" alt="戴珍珠耳環-image">
+              <div class="card-body p-2">
+                <h3 class="fs-5">戴珍珠耳環的少女</h3>
+                <h4 class="fs-7">揚·維梅爾</h4>
+                <p class="mb-2">維梅爾最為著名的畫作，是想像中的人物畫作，一位穿著異國服飾的女孩、頭戴東方頭巾，耳環則鑲有大到不真實的珍珠。</p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="link-secondary stretched-link">More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
+            <div class="card bg-transparent text-light">
+              <span class="text-light fs-6 position-absolute top-10 start-10 translate-middle">Raffaello Santi</span>
+              <img src="../assets/images/雅典學院.png" alt="雅典學院-image">
+              <div class="card-body p-2">
+                <h3 class="fs-5">雅典學院</h3>
+                <h4 class="fs-7">拉斐爾</h4>
+                <p class="mb-2">義大利文藝復興藝術家拉斐爾因受任裝飾梵蒂岡使徒宮，在1509年至1510年間創作的一幅濕壁畫。</p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="link-secondary stretched-link">More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
+            <div class="card bg-transparent text-light">
+              <span class="text-light fs-6 position-absolute top-10 start-10 translate-middle">Gustav Klimt</span>
+              <img src="../assets/images/盲人.png" alt="盲人-image">
+              <div class="card-body p-2">
+                <h3 class="fs-5">盲人</h3>
+                <h4 class="fs-7">古斯塔夫·克里姆</h4>
+                <p class="mb-2">描繪一位左眼患有眼疾的老年男子，將深邃的皺紋和凹陷的臉頰表達痛苦的象徵。</p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="link-secondary stretched-link">More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
+            <div class="card bg-transparent text-light">
+              <span class="text-light fs-6 position-absolute top-10 start-10 translate-middle">Paul Cézanne</span>
+              <img src="../assets/images/窗簾與水壺.png" alt="窗簾與水壺-image">
+              <div class="card-body p-2">
+                <h3 class="fs-5">窗簾與水壺</h3>
+                <h4 class="fs-7">保羅·塞尚</h4>
+                <p class="mb-2">這張畫作展現勻稱的構圖，窺探出塞尚旺盛的實驗精神，以知性態度來探究傳統的三次元空間。</p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="link-secondary stretched-link">More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-end mb-n13">
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="#" class="btn btn-light fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 shadow">View All<span class="material-icons">trending_flat</span></a>
           </div>
         </div>
       </div>
-    </div>
-
+    </section>
+    <section class="container pt-13 pb-9 py-md-11 py-lg-14">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 d-none d-lg-block">
+          <img src="../assets/images/簡介圖1.jpg" class="img-fluid" alt="背景圖">
+        </div>
+        <div class=" col-12 col-lg-6">
+          <div class="row mt-lg-9">
+            <div class="col-12 col-lg-10 mb-6 mb-md-9 mb-lg-0">
+              <h2 class="fw-bolder mb-7">藝術家檢索<br class="d-md-none">平台簡介.</h2>
+              <div class="deco-dark-line ms-n11 mb-8"></div>
+              <p class="text-gray-light mb-6 mb-lg-5">我們的平台旨在成為藝術愛好者、收藏家和藝術界專業人士的首選工具。透過這個平台，您可以輕鬆地尋找世界各地的優秀藝術家，發掘他們的作品，並深入了解他們的創作背後的故事與想法。藝術家檢索平台具備不同搜索功能，讓您可以按照不同的關鍵字、類別條件來篩選藝術家，以找到最符合您需求的作品和藝術家資訊。同時，我們的平台也提供豐富的藝術家資料和作品展示，讓您能夠全面了解每位藝術家的生平、藝術背景和藝術成就。</p>
+              <img src="../assets/images/簡介圖1.jpg" class="img-fluid d-lg-none" alt="背景圖">
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="align-self-end me-6 me-md-9 me-lg-0">
+              <img src="../assets/images/簡介圖2.png" class="img-fluid d-none d-lg-block" alt="背景圖">
+              <img src="../assets/images/簡介圖2(small).jpg" class="img-fluid d-lg-none" alt="背景圖">
+            </div>
+            <div>
+              <img src="../assets/images/簡介圖3.png" class="img-fluid d-none d-lg-block" alt="背景圖">
+              <img src="../assets/images/簡介圖3(small).jpg" class="img-fluid d-lg-none" alt="背景圖">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

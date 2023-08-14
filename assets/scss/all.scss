@@ -1,11 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&display=swap');
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 
-
-@import './layout/header.scss';
-@import './layout/footer.scss';
-
-
 @import './pages/index.scss';
-
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import './utils/utilities';
+@import "../../node_modules/bootstrap/scss/utilities/api";
