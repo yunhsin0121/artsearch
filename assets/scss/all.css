@@ -3,10 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&display=swap");
 .logo-title {
   width: 113px;
-  height: 100%;
   display: block;
-  background: url(../assets/images/logo.svg) no-repeat;
+  background: url(../assets/images/logo.png) no-repeat;
   background-position: center;
+  background-size: contain;
   text-indent: 225px;
   white-space: nowrap;
   overflow: hidden;
