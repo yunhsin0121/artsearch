@@ -649,7 +649,18 @@ $utilities: map-merge(
         visible: visible,
         invisible: hidden,
       )
-    )
+    ),
+    "z-index": (
+      property: z-index,
+      class: z,
+      values: (
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+      )
+    ),
     // scss-docs-end utils-visibility
   ),
   $utilities
