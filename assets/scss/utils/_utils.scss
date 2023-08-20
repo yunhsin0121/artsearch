@@ -1,24 +1,24 @@
 .artworks::-webkit-scrollbar {
-display: none;
+    display: none;
 }
 .artworks{
--ms-overflow-style: none;
-scrollbar-width: none; 
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
 }
 .bg-cover{
-background-repeat: no-repeat;
-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .deco-dark-line{
-width: 200px;
-border-bottom: 2px solid #141213;
+    width: 200px;
+    border-bottom: 2px solid #141213;
     @media(max-width:992px) {
     width: 180px;
     }
 }
 .deco-light-line{
-width: 200px;
-border-bottom: 2px solid #FFFFFF;
+    width: 200px;
+    border-bottom: 2px solid #FFFFFF;
     @media(max-width:992px) {
     width: 180px;
     }
