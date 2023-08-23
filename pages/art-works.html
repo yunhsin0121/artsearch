@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+  <title>作品介紹－ART SEARCH</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+  <section class="">
+    <div class="container py-4 py-md-11">
+      <div class="d-flex justify-content-center mb-md-9">
+        <h2 class="fs-2 fw-bolder ms-7 ms-md-0 me-3 text-primary mb-4">星夜</h2>
+        <a href="#" class="like fa-regular fa-heart fs-2 mb-0 text-primary"></a>
+      </div>
+      <div class="art-works">
+        <div class="swiper mySwiper2 shadow-lg">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/artist-info/星夜.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/works-info/星夜1.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/works-info/星夜2.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/works-info/星夜3.jpg"/>
+            </div>
+          </div>
+          <div class="swiper-button-next text-white"></div>
+          <div class="swiper-button-prev text-white"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper py-7">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/artist-info/星夜.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/works-info/星夜1.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/works-info/星夜2.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/works-info/星夜3.jpg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container py-4 py-md-7 mb-3 mb-md-9">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-7 col-lg-9 mb-3 mb-md-0">
+        <div class="row justify-content-between mb-8 mb-md-10">
+          <div class="col px-0 px-lg-2">
+            <h3 class="fs-4 fw-bolder ms-7 ms-md-0">作品簡介.</h3>
+            <div class="d-flex flex-column flex-md-row align-items-md-center">
+              <p class="fs-7 fs-md-6 mb-4 mb-md-0 ms-7 ms-md-0 me-9">Introduction</p>
+              <div class="deco-dark-line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <p class="text-gray-light mb-2">星空為荷蘭後印象派畫家，文森·梵谷著名的油畫之一，這幅畫作於1889年6月所繪製，描繪了在法國普羅旺斯地區聖雷米的一家精神病院朝東的窗戶所看到的夜晚景色和一個想像中的村莊。<br>自1941年以來，該畫作莉莉·P·布利斯捐贈於紐約現代藝術博物館中永久收藏，被廣泛認為是梵谷的代表作，也被視為世界知名的西方畫作之一。</p>
+          <a href="artist-info.html" class="fs-6 fw-bold align-self-end">文森·梵谷</a>
+        </div>
+      </div>
+    <div class="col-12 col-md-5 col-lg-3 mb-3 mb-md-9">
+      <div class="bg-primary-light text-gray-light fw-bold px-5 py-7 shadow">
+        <p class="mb-2">風格<span class="ms-5">印象派</span></p>
+        <p>年代<span class="ms-5">1853年 - 1890年</span></p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-primary-light bg-cover pt-9 pt-md-11 pt-lg-16 pb-11 mb-8 mb-xl-10" style="background-image: url(../assets/images/bg.png);">
+    <div class="container">
+      <div class="row justify-content-between mb-8 mb-md-10">
+        <div class="col px-0 px-lg-2">
+          <h3 class="fs-4 fw-bolder text-white ms-7 ms-md-0 ">其他作品.</h3>
+          <div class="d-flex flex-column flex-md-row align-items-md-center">
+            <p class="fs-7 fs-md-6 text-white  mb-md-0 ms-7 ms-md-0 me-9">Artworks</p>
+            <div class="deco-light-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="artist-info container">
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper py-8 d-flex align-items-center">
+            <div class="swiper-slide ">
+              <img src="../assets/images/works-info/梵谷的椅子.jpg" class="shadow" alt="向日葵-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">向日葵</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/works-info/夜間咖啡館.jpg" class="shadow" alt="星夜-image">
+              <a href="art-works.html" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">星夜</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/artist-info/奧維爾教堂.jpg" class="shadow" alt="奧維爾教堂-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">奧維爾教堂</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/artist-info/鳶尾花.jpg" class="shadow" alt="鳶尾花-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">鳶尾花</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/works-info/有絲柏的道路.jpg" class="shadow" alt="有絲柏的道路-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">有絲柏的道路</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/works-info/在聖馬迪拉莫海邊的漁船.jpg" class="shadow" alt="在聖馬迪拉莫海邊的漁船-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">在聖馬迪拉莫<br>海邊的漁船</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/artist-info/絲柏樹.jpg" class="shadow" alt="絲柏樹-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">絲柏樹</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/artist-info/在亞爾的臥室.jpg" class="shadow" alt="在亞爾的臥室-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">在亞爾的臥室</a>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next text-primary"></div>
+          <div class="swiper-button-prev text-primary"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+      followFinger : false,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+  <script>
+    var swiper3 = new Swiper(".mySwiper3", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      followFinger : false,
+      mousewheel: {
+        invert: true,
+      },
+      breakpoints: {
+      "@0.00": {
+        slidesPerView: 1,
+      },
+      "@0.50": {
+        slidesPerView: 2,
+      },
+      "@1.00": {
+        slidesPerView: 3,
+      },
+      "@1.50": {
+        slidesPerView: 4,
+      },
+    },
+  });
+  </script>
+</body>
+
+</html>

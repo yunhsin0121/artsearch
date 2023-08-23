@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <title>文森·梵谷－ART SEARCH</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <section class="container py-11">
+    <section class="container py-4 py-md-11">
       <div class="d-flex justify-content-center mb-3 mb-md-9">
         <h2 class="fs-2 fw-bolder ms-7 ms-md-0 me-3 text-primary mb-4">文森·梵谷</h2>
         <a href="#" class="like fa-regular fa-heart fs-2 mb-0 text-primary"></a>
@@ -24,27 +25,31 @@
           </div>
         </div>
       </div>
-      <div class="row flex-row-reverse justify-content-center mb-8 mb-xl-10">
-        <div class="col-lg-6 col-xl-7 mb-n8 mb-lg-0 z-3">
+      <div class="row justify-content-center mb-8 mb-xl-10">
+        <div class="col-lg-6 col-xl-5 mb-8 mb-lg-0 d-flex flex-column">
+          <div class="d-inline-block d-lg-none bg-gray-light text-white p-5 mb-n4 shadow align-self-end">
+            <p class="mb-2">風格<span class="ms-5">印象派</span></p>
+            <p>年代<span class="ms-5">1853年 - 1890年</span></p>
+          </div>
+          <img src="../assets/images/文森梵谷(big).jpg" class="img-fluid shadow" alt="文森梵谷-image">
+        </div>
+        <div class="col-lg-6 col-xl-7">
           <div class="mt-xl-8 mb-8 mb-xl-10">
             <p class="text-gray-light mb-2">文森·威廉·梵谷，早年曾譯梵谷柯，荷蘭後印象派畫家，是表現主義的先驅，並深深影響了二十世紀藝術，尤其是野獸派與德國表現主義。梵谷的作品，如《星夜》、《向日葵》、《有烏鴉的麥田》等，現已躋身於全球最知名的藝術作品的行列。
               在2004年票選最偉大的荷蘭人當中，排名第十，次於第九偉大的17世紀畫家林布蘭。</p>
             <p class="text-gray-light mb-2">1861年梵谷開始接受教育，在學習語言包括法語、德語及英語表現不錯，但在1868年3月中斷學業，並在1869年7月在國際藝術品交易商公司見習。經歷了短暫的工作生涯後，他成為傳教士，向貧困的採礦工人傳教。直到大約27歲時，梵谷才開始了他的畫家生涯，然而，在他生前的最後十年間，卻創作了2100幅左右的畫作，包括約860幅的油畫。</p>
             <p class="text-gray-light mb-2"></p>梵谷早期只以灰暗色系進行創作，直到他在巴黎遇見了印象派與新印象派。梵谷融入了他們的鮮豔色彩與畫風，創造了他獨特的個人畫風，尤其在梵谷待在法國阿爾勒的那段時間，發展已臻成熟。他最著名的作品多半是他在生前最後兩年創作的，期間梵谷的作品乏人問津，深陷於精神疾病和貧困中，最後導致他在37歲那年自殺。</p>
           </div>
-          <div class="d-flex justify-content-end d-lg-inline-block">
+          <div class="d-none d-lg-inline-block">
             <div class="bg-gray-light text-white p-5 ms-lg-n11 shadow">
               <p class="mb-2">風格<span class="ms-5">印象派</span></p>
               <p>年代<span class="ms-5">1853年 - 1890年</span></p>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-xl-5 z-1">
-          <img src="../assets/images/文森梵谷(big).jpg" class="img-fluid shadow" alt="文森梵谷-image">
-        </div>
       </div>
     </section>
-    <section class="bg-primary-light bg-cover pt-9 pt-md-11 pt-lg-16 pb-11 mb-8 mb-xl-10" style="background-image: url(../assets/images/bg2.png);">
+    <!-- <section class="bg-primary-light bg-cover pt-9 pt-md-11 pt-lg-16 pb-11 mb-8 mb-xl-10" style="background-image: url(../assets/images/bg2.png);">
       <div class="container-fluid px-sm-12 px-lg-14">
         <div class="row justify-content-between mb-8 mb-md-10">
           <div class="col px-0 px-lg-2">
@@ -58,7 +63,7 @@
         <div class="row flex-nowrap overflow-auto px-8 py-4  mb-7 mb-md-10 artworks">
           <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
             <div class="card bg-transparent">
-              <img src="../assets/images/向日葵.jpg" class="img-fluid" alt="向日葵-image">
+              <img src="../assets/images/artist-info/向日葵.jpg" class="img-fluid" alt="向日葵-image">
               <div class="card-img-overlay deco-bg p-0">
                 <div class="d-flex justify-content-center align-items-center w-100 h-100">
                   <a href="#" class="card-link stretched-link fw-bold fs-4 deco-bg">向日葵</a>
@@ -68,17 +73,17 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
             <div class="card">
-              <img src="../assets/images/星夜.jpg" class="img-fluid" alt="星夜-image">
+              <img src="../assets/images/artist-info/星夜.jpg" class="img-fluid" alt="星夜-image">
               <div class="card-img-overlay deco-bg p-0">
                 <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                  <a href="#" class="card-link stretched-link fw-bold fs-4 deco-bg">星夜</a>
+                  <a href="art-works.html" class="card-link stretched-link fw-bold fs-4 deco-bg">星夜</a>
                 </div> 
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
             <div class="card">
-              <img src="../assets/images/奧維爾教堂.jpg" class="img-fluid" alt="奧維爾教堂-image">
+              <img src="../assets/images/artist-info/奧維爾教堂.jpg" class="img-fluid" alt="奧維爾教堂-image">
               <div class="card-img-overlay deco-bg p-0">
                 <div class="d-flex justify-content-center align-items-center w-100 h-100">
                   <a href="#" class="card-link stretched-link fw-bold fs-4 deco-bg">奧維爾教堂</a>
@@ -88,7 +93,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
             <div class="card">
-              <img src="../assets/images/鳶尾花.jpg" class="img-fluid bg-primary-light" alt="鳶尾花-image">
+              <img src="../assets/images/artist-info/鳶尾花.jpg" class="img-fluid bg-primary-light" alt="鳶尾花-image">
               <div class="card-img-overlay deco-bg p-0">
                 <div class="d-flex justify-content-center align-items-center w-100 h-100">
                   <a href="#" class="card-link stretched-link fw-bold fs-4 deco-bg">鳶尾花</a>
@@ -98,7 +103,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
             <div class="card">
-              <img src="../assets/images/絲柏樹.jpg" class="img-fluid bg-primary-light" alt="絲柏樹-image">
+              <img src="../assets/images/artist-info/絲柏樹.jpg" class="img-fluid bg-primary-light" alt="絲柏樹-image">
               <div class="card-img-overlay deco-bg p-0">
                 <div class="d-flex justify-content-center align-items-center w-100 h-100">
                   <a href="#" class="card-link stretched-link fw-bold fs-4 deco-bg">絲柏樹</a>
@@ -108,7 +113,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
             <div class="card">
-              <img src="../assets/images/在亞爾的臥室.jpg" class="img-fluid bg-primary-light" alt="在亞爾的臥室-image">
+              <img src="../assets/images/artist-info/在亞爾的臥室.jpg" class="img-fluid bg-primary-light" alt="在亞爾的臥室-image">
               <div class="card-img-overlay deco-bg p-0">
                 <div class="d-flex justify-content-center align-items-center w-100 h-100">
                   <a href="#" class="card-link stretched-link fw-bold fs-4 deco-bg">在亞爾的臥室</a>
@@ -118,13 +123,100 @@
           </div>
         </div>
       </div>
+    </section> -->
+    <section class="bg-primary-light bg-cover pt-9 pt-md-11 pt-lg-16 pb-11 mb-8 mb-xl-10" style="background-image: url(../assets/images/bg2.png);">
+      <div class="container">
+        <div class="row justify-content-between mb-8 mb-md-10">
+          <div class="col px-0 px-lg-2">
+            <h3 class="fs-4 fw-bolder ms-7 ms-md-0">作品選集.</h3>
+            <div class="d-flex flex-column flex-md-row align-items-md-center">
+              <p class="fs-7 fs-md-6 mb-4 mb-md-0 ms-7 ms-md-0 me-9">Artworks</p>
+              <div class="deco-dark-line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="artist-info container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper py-8 d-flex align-items-center">
+              <div class="swiper-slide ">
+                <img src="../assets/images/artist-info/向日葵.jpg" class="shadow" alt="向日葵-image">
+                <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                  <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">向日葵</a>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/artist-info/星夜.jpg" class="shadow" alt="星夜-image">
+                <a href="art-works.html" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                  <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">星夜</a>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/artist-info/奧維爾教堂.jpg" class="shadow" alt="奧維爾教堂-image">
+                <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                  <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">奧維爾教堂</a>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/artist-info/鳶尾花.jpg" class="shadow" alt="鳶尾花-image">
+                <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                  <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">鳶尾花</a>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/artist-info/絲柏樹.jpg" class="shadow" alt="絲柏樹-image">
+                <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                  <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">絲柏樹</a>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/artist-info/在亞爾的臥室.jpg" class="shadow" alt="在亞爾的臥室-image">
+                <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                  <span class="fw-bold fs-4 h-100 w-100 d-flex justify-content-center align-items-center">在亞爾的臥室</a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </section>
-
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <!-- <script type="module" src="../assets/js/jquery-3.6.4.min.js"></script> -->
-    <!-- <script type="module" src="../assets/js/jqueny.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        mousewheel: {
+          invert: true,
+        },
+        breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+        },
+        "@1.00": {
+          slidesPerView: 4,
+        },
+      },
+    });
+    </script>
   </body>
 </html>

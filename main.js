@@ -1,5 +1,4 @@
 import './assets/scss/all.scss';
-// import './assets/js/jquery.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 console.log("Hello world!");
 $(document).ready(function () {
