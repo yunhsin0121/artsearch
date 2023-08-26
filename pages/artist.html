@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+  <title>ART SEARCH</title>
+
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+    <section class="container py-4 py-lg-7 mb-md-12 mb-lg-12 mb-sm-10">
+      <div class="row mb-8 mb-md-10 justify-content-center">
+        <div class="col-6 col-md-8 col-lg-3">
+          <h2 class="fw-bolder ms-9">藝術家.</h2>
+          <div class="d-flex flex-column flex-md-row align-items-md-center">
+            <p class="fs-8 fs-md-4 mb-4 mb-md-0 me-9 ms-9">Artists</p>
+            <div class="deco-dark-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-8">
+          <button type="button" class="btn btn-primary text-white px-7 px-md-7 me-7">A - Z</button>
+          <button type="button" class="btn btn-primary text-white px-7 px-md-7 me-7">年代</button>
+          <button type="button" class="btn btn-primary text-white px-7 px-md-7">風格</button>
+      </div>
+      <ul class="row flex-wrap list-unstyled" >
+        <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-9" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/文森.png" class="card-img" alt="文森-image">
+            <a href="#" class="like fa-regular fa-heart fs-4 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="artist-info.html" class=" w-100 fs-8 fs-md-5 text-center up-hover">文森·梵谷</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/洛德.png" class="card-img" alt="洛德-image">
+              <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+              <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">洛德·莫內家</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/artist/李奧納多·達文西.png" class="card-img" alt="達文西-image">
+            <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">李奧納多·達文西</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/artist/彼得·保羅·魯本斯.png" class="card-img" alt="魯本斯-image">
+            <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">彼得·保羅·魯本斯</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/artist/班傑明·韋斯特.png" class="card-img" alt="韋斯特-image">
+            <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">班傑明·韋斯特</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/保羅高更.png" class="card-img" alt="保羅高更-image">
+            <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">保羅·高更</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/保羅塞尚.png" class="card-img" alt="保羅塞尚-image">
+            <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">保羅·塞尚</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/阿爾布雷希特.png" class="card-img" alt="阿爾布雷希特-image">
+            <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">阿爾布雷希特·杜勒</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/克林姆.png" class="card-img" alt="克林姆-image">
+            <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">古斯塔夫·克林姆</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/artist/米開朗基羅.png" class="card-img" alt="米開朗基羅-image">
+            <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">米開朗基羅</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/artist/奧諾雷·杜米埃.png" class="card-img" alt="杜米埃-image">
+            <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">米奧諾雷·杜米埃</a>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="../assets/images/artist/愛德華·馬奈.png" class="card-img" alt="馬奈-image">
+            <a href="#" class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+            <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">愛德華·馬奈</a>
+          </div>
+        </li>
+      </ul>
+      <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link active" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
