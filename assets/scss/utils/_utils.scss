@@ -25,6 +25,7 @@
 }
 .deco-bg{
     color:white;
+    transition: all 1s;
     :hover{
       background-color: white;
       opacity: 0.5;

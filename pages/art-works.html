@@ -15,8 +15,7 @@
 
 <body>
   <%- include('./layout/header'); -%>
-
-  <section class="">
+  <section>
     <div class="container py-4 py-md-11">
       <div class="d-flex justify-content-center mb-md-9">
         <h2 class="fs-2 fw-bolder ms-7 ms-md-0 me-3 text-primary mb-4">星夜</h2>
@@ -73,16 +72,16 @@
           </div>
         </div>
         <div class="d-flex flex-column" data-aos="fade-up">
-          <p class="text-gray-light mb-2">星空為荷蘭後印象派畫家，文森·梵谷著名的油畫之一，這幅畫作於1889年6月所繪製，描繪了在法國普羅旺斯地區聖雷米的一家精神病院朝東的窗戶所看到的夜晚景色和一個想像中的村莊。<br>自1941年以來，該畫作莉莉·P·布利斯捐贈於紐約現代藝術博物館中永久收藏，被廣泛認為是梵谷的代表作，也被視為世界知名的西方畫作之一。</p>
-          <a href="artist-info.html" class="fs-6 fw-bold align-self-end">文森·梵谷</a>
+          <p class="text-gray-light mb-2">星夜為荷蘭後印象派畫家，文森·梵谷著名的油畫之一，這幅畫作於1889年6月所繪製，描繪了在法國普羅旺斯地區聖雷米的一家精神病院朝東的窗戶所看到的夜晚景色和一個想像中的村莊。<br>自1941年以來，該畫作莉莉·P·布利斯捐贈於紐約現代藝術博物館中永久收藏，被廣泛認為是梵谷的代表作，也被視為世界知名的西方畫作之一。</p>
+          <a href="artist-info.html" class="fs-6 fw-bold align-self-end link-primary">文森·梵谷</a>
         </div>
       </div>
-    <div class="col-12 col-md-5 col-lg-3 mb-3 mb-md-9" data-aos="fade-up">
-      <div class="bg-primary-light text-gray-light fw-bold px-5 py-7 shadow">
-        <p class="mb-2">風格<span class="ms-5">印象派</span></p>
-        <p>年代<span class="ms-5">1853年 - 1890年</span></p>
+      <div class="col-12 col-md-5 col-lg-3 mb-3 mb-md-9" data-aos="fade-up">
+        <div class="bg-primary-light text-gray-light fw-bold px-5 py-7 shadow">
+          <p class="mb-2">風格<span class="ms-5">印象派</span></p>
+          <p>年代<span class="ms-5">1853年 - 1890年</span></p>
+        </div>
       </div>
-    </div>
   </section>
   <section class="bg-primary-light bg-cover pt-9 pt-md-11 pt-lg-16 pb-11 mb-8 mb-xl-10" style="background-image: url(../assets/images/bg.png);" data-aos="fade-up">
     <div class="container">
@@ -196,9 +195,7 @@
         prevEl: ".swiper-button-prev",
       },
       followFinger : false,
-      mousewheel: {
-        invert: true,
-      },
+      mousewheel: true,
       breakpoints: {
         "@0.00": {
           slidesPerView: 1,
