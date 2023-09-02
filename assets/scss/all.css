@@ -6,92 +6,50 @@ img {
      object-fit: contain;
 }
 
-.artist-info .swiper {
+.mainSwiper {
   width: 100%;
   height: 100%;
 }
-.artist-info .swiper-slide {
+.mainSwiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.artist-info .swiper-slide img {
+.mainSwiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.artist-info .swiper-pagination-bullet-active {
+
+.swiper-pagination-bullet-active {
   background: #AA7C09;
 }
 
-.art-works .swiper {
+.swiper-slide img {
   width: 100%;
   height: 100%;
-  align-items: center;
 }
-.art-works .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.art-works .swiper {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.art-works .swiper-slide {
-  background-size: cover;
-  background-position: center;
-}
-.art-works .mySwiper2 {
+
+.bigSwiper {
   height: 80%;
   width: 100%;
 }
-.art-works .mySwiper {
-  width: 100%;
+
+.smallSwiper {
+  width: 91.3%;
   height: 100%;
 }
-.art-works .mySwiper .swiper-slide {
+
+.smallSwiper .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.4;
 }
-.art-works .mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
-}
-.art-works .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.art-works .swiper-slide {
-  text-align: center;
-  font-size: 16px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-}
 
-.index .swiper4 {
-  width: 100%;
-  height: 100%;
-}
-.index .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.index .swiper-pagination-bullet-active {
-  background: white;
+.smallSwiper .swiper-slide-thumb-active {
+  opacity: 1;
 }
 
 /*!
@@ -17719,37 +17677,59 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.artworks::-webkit-scrollbar {
-  display: none;
+.deco-dark-long-line {
+  position: relative;
 }
-
-.artworks {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.deco-dark-long-line::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background-color: #141213;
+  top: 150%;
+  left: -20%;
 }
-
-.bg-cover {
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (max-width: 992px) {
+  .deco-dark-long-line::before {
+    left: -30%;
+  }
 }
 
 .deco-dark-line {
-  width: 200px;
-  border-bottom: 2px solid #141213;
+  position: relative;
+}
+.deco-dark-line::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background-color: #141213;
+  top: 50%;
+  left: 120%;
 }
 @media (max-width: 992px) {
-  .deco-dark-line {
-    width: 180px;
+  .deco-dark-line::before {
+    top: 180%;
+    left: -30%;
   }
 }
 
 .deco-light-line {
-  width: 200px;
-  border-bottom: 2px solid #FFFFFF;
+  position: relative;
+}
+.deco-light-line::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 2px;
+  background-color: #FFFFFF;
+  top: 50%;
+  left: 120%;
 }
 @media (max-width: 992px) {
-  .deco-light-line {
-    width: 180px;
+  .deco-light-line::before {
+    top: 180%;
+    left: -30%;
   }
 }
 
@@ -20681,6 +20661,26 @@ textarea.form-control-lg {
   z-index: 5 !important;
 }
 
+.bg-size-cover {
+  background-size: cover !important;
+}
+
+.bg-size-contain {
+  background-size: contain !important;
+}
+
+.bg-position-center {
+  background-position: center !important;
+}
+
+.bg-position-end {
+  background-position: right top !important;
+}
+
+.bg-position-start {
+  background-position: left center !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -20801,6 +20801,24 @@ textarea.form-control-lg {
   }
   .border-start-sm-0 {
     border-left: 0 !important;
+  }
+  .w-sm-25 {
+    width: 25% !important;
+  }
+  .w-sm-33 {
+    width: 33.33% !important;
+  }
+  .w-sm-50 {
+    width: 50% !important;
+  }
+  .w-sm-75 {
+    width: 75% !important;
+  }
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .w-sm-auto {
+    width: auto !important;
   }
   .flex-sm-fill {
     flex: 1 1 auto !important;
@@ -22313,6 +22331,24 @@ textarea.form-control-lg {
   .border-start-md-0 {
     border-left: 0 !important;
   }
+  .w-md-25 {
+    width: 25% !important;
+  }
+  .w-md-33 {
+    width: 33.33% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-100 {
+    width: 100% !important;
+  }
+  .w-md-auto {
+    width: auto !important;
+  }
   .flex-md-fill {
     flex: 1 1 auto !important;
   }
@@ -23823,6 +23859,24 @@ textarea.form-control-lg {
   }
   .border-start-lg-0 {
     border-left: 0 !important;
+  }
+  .w-lg-25 {
+    width: 25% !important;
+  }
+  .w-lg-33 {
+    width: 33.33% !important;
+  }
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  .w-lg-100 {
+    width: 100% !important;
+  }
+  .w-lg-auto {
+    width: auto !important;
   }
   .flex-lg-fill {
     flex: 1 1 auto !important;
@@ -25335,6 +25389,24 @@ textarea.form-control-lg {
   .border-start-xl-0 {
     border-left: 0 !important;
   }
+  .w-xl-25 {
+    width: 25% !important;
+  }
+  .w-xl-33 {
+    width: 33.33% !important;
+  }
+  .w-xl-50 {
+    width: 50% !important;
+  }
+  .w-xl-75 {
+    width: 75% !important;
+  }
+  .w-xl-100 {
+    width: 100% !important;
+  }
+  .w-xl-auto {
+    width: auto !important;
+  }
   .flex-xl-fill {
     flex: 1 1 auto !important;
   }
@@ -26845,6 +26917,24 @@ textarea.form-control-lg {
   }
   .border-start-xxl-0 {
     border-left: 0 !important;
+  }
+  .w-xxl-25 {
+    width: 25% !important;
+  }
+  .w-xxl-33 {
+    width: 33.33% !important;
+  }
+  .w-xxl-50 {
+    width: 50% !important;
+  }
+  .w-xxl-75 {
+    width: 75% !important;
+  }
+  .w-xxl-100 {
+    width: 100% !important;
+  }
+  .w-xxl-auto {
+    width: auto !important;
   }
   .flex-xxl-fill {
     flex: 1 1 auto !important;

@@ -14,7 +14,7 @@
     <%- include('./layout/header'); -%>
     <section class="container mb-md-12 mb-lg-16">
       <div class="card rounded-0 border-0">
-        <img src="../assets/images/banner.jpg" class="card-img rounded-0" alt="background-image">
+        <img src="../assets/images/art-gallery.jpg" class="card-img rounded-0" alt="art-gallery-image">
         <div class="card-img-overlay bg-light bg-opacity-75 p-0 d-none d-md-flex align-items-center justify-content-center" style="max-height: 500px;">
           <div class="card-body text-center" data-aos="fade-up">
             <h2 class="fw-bolder fs-2 mb-6">開啟藝術之門，<br class="d-md-none">探索無盡魅力！</h2>
@@ -55,8 +55,7 @@
         <div class="col-md-8 col-lg-5 px-0 px-md-2" data-aos="fade-up">
           <h2 class="fw-bolder ms-7 ms-md-0">熱門藝術家.</h2>
           <div class="d-flex flex-column flex-md-row align-items-md-center">
-            <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 me-9">Trending Artists</p>
-            <div class="deco-dark-line"></div>
+            <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 deco-dark-line">Trending Artists</p>
           </div>
         </div>
         <div class="col-3 d-none d-md-block" data-aos="fade-up">
@@ -117,159 +116,111 @@
         <a href="#" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
       </div>
     </section>
-    <section class="pt-9 pt-md-11 pt-lg-16 pb-11" style="background-image: url(../assets/images/bg.png);" data-aos="fade-up">
+    <section class="pt-9 pt-md-11 pt-lg-16 pb-11 bg-size-cover bg-position-end" style="background-image: url(../assets/images/bg.png);" data-aos="fade-up">
       <div class="container-fluid px-sm-12 px-lg-14">
-        <div class="row justify-content-between mb-8 mb-md-10">
-          <div class="col px-0 px-lg-2" data-aos="fade-up">
-            <h2 class="fw-bolder ms-7 ms-md-0 text-white">熱門作品.</h2>
+        <div class="row justify-content-between mb-8 mb-md-10 text-white">
+          <div class="col-8 col-lg-5 px-0 px-md-2" data-aos="fade-up">
+            <h2 class="fw-bolder ms-7 ms-md-0">熱門作品.</h2>
             <div class="d-flex flex-column flex-md-row align-items-md-center">
-              <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 me-9 text-white">Trending Artworks</p>
-              <div class="deco-light-line"></div>
+              <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 deco-light-line">Trending Artworks</p>
             </div>
           </div>
         </div>
-        <div class="index">
-          <div class="swiper mySwiper4">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide bg-transparent text-light">
-                <div class="card bg-transparent text-light">
-                  <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                  <img src="../assets/images/戴珍珠耳環.png" alt="戴珍珠耳環-image">
-                  <div class="card-body">
-                    <h3 class="fs-5">戴珍珠耳環的少女</h3>
-                    <h4 class="fs-7">揚·維梅爾</h4>
-                    <p class="mb-2">維梅爾最為著名的畫作，是想像中的人物畫作，一位穿著異國服飾的女孩、頭戴東方頭巾，耳環則鑲有大到不真實的珍珠。</p>
-                    <div class="d-flex justify-content-end">
-                      <a href="#" class="link-secondary stretched-link">More</a>
+        <div class="swiper-father px-10 position-relative">
+          <div class="swiper-container">
+            <div class="swiper mainSwiper">
+              <div class="swiper-wrapper d-flex align-items-center">
+                <div class="swiper-slide bg-transparent text-light">
+                  <div class="card bg-transparent text-light">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
+                    <img src="../assets/images/戴珍珠耳環.png" alt="戴珍珠耳環-image">
+                    <div class="card-body">
+                      <h3 class="fs-5">戴珍珠耳環的少女</h3>
+                      <h4 class="fs-7">揚·維梅爾</h4>
+                      <p class="mb-2">維梅爾最為著名的畫作，是想像中的人物畫作，一位穿著異國服飾的女孩、頭戴東方頭巾，耳環則鑲有大到不真實的珍珠。</p>
+                      <div class="d-flex justify-content-end">
+                        <a href="#" class="link-secondary stretched-link">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-transparent text-light">
+                  <div class="card bg-transparent text-light">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
+                    <img src="../assets/images/雅典學院.png" alt="雅典學院-image">
+                    <div class="card-body p-2">
+                      <h3 class="fs-5">雅典學院</h3>
+                      <h4 class="fs-7">拉斐爾</h4>
+                      <p class="mb-2">義大利文藝復興藝術家拉斐爾因受任裝飾梵蒂岡使徒宮，在1509年至1510年間創作的一幅濕壁畫。</p>
+                      <div class="d-flex justify-content-end">
+                        <a href="#" class="link-secondary stretched-link">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-transparent text-light">
+                  <div class="card bg-transparent text-light">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
+                    <img src="../assets/images/盲人.png" alt="盲人-image">
+                    <div class="card-body p-2">
+                      <h3 class="fs-5">盲人</h3>
+                      <h4 class="fs-7">古斯塔夫·克里姆</h4>
+                      <p class="mb-2">描繪一位左眼患有眼疾的老年男子，將深邃的皺紋和凹陷的臉頰表達痛苦的象徵。</p>
+                      <div class="d-flex justify-content-end">
+                        <a href="#" class="link-secondary stretched-link">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-transparent text-light">
+                  <div class="card bg-transparent text-light">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
+                    <img src="../assets/images/窗簾與水壺.png" alt="窗簾與水壺-image">
+                    <div class="card-body p-2">
+                      <h3 class="fs-5">窗簾與水壺</h3>
+                      <h4 class="fs-7">保羅·塞尚</h4>
+                      <p class="mb-2">這張畫作展現勻稱的構圖，窺探出塞尚旺盛的實驗精神，以知性態度來探究傳統的三次元空間。</p>
+                      <div class="d-flex justify-content-end">
+                        <a href="#" class="link-secondary stretched-link">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-transparent text-light">
+                  <div class="card bg-transparent text-light">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
+                    <img src="../assets/images/吶喊.jpg" alt="吶喊-image">
+                    <div class="card-body p-2">
+                      <h3 class="fs-5">吶喊</h3>
+                      <h4 class="fs-7">愛德華·孟克</h4>
+                      <p class="mb-2">畫面的主體是在血紅色映襯下一個極其痛苦的表情，有些人認為該作品反映了現代人被存在主義的焦慮侵擾的意境。</p>
+                      <div class="d-flex justify-content-end">
+                        <a href="#" class="link-secondary stretched-link">More</a>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="swiper-slide bg-transparent text-light">
+                  <div class="card bg-transparent text-light">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
+                    <img src="../assets/images/artist-info/星夜.jpg" alt="星夜-image">
+                    <div class="card-body p-2">
+                      <h3 class="fs-5">星夜</h3>
+                      <h4 class="fs-7">文森梵谷</h4>
+                      <p class="mb-2">描繪了在法國普羅旺斯地的一家精神病院，裡面朝東的窗戶中所看到的夜景和一個想像中的村莊，此作品被廣泛認為是梵谷的代表作，被視為世界知名的西方畫作之一。</p>
+                      <div class="d-flex justify-content-end">
+                        <a href="#" class="link-secondary stretched-link">More</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide bg-transparent text-light">
-                <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Raffaello Santi</span>
-                <img src="../assets/images/雅典學院.png" alt="雅典學院-image">
-                <div class="card-body p-2">
-                  <h3 class="fs-5">雅典學院</h3>
-                  <h4 class="fs-7">拉斐爾</h4>
-                  <p class="mb-2">義大利文藝復興藝術家拉斐爾因受任裝飾梵蒂岡使徒宮，在1509年至1510年間創作的一幅濕壁畫。</p>
-                  <div class="d-flex justify-content-end">
-                    <a href="#" class="link-secondary stretched-link">More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide bg-transparent text-light">
-                <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Gustav Klimt</span>
-                <img src="../assets/images/盲人.png" alt="盲人-image">
-                <div class="card-body p-2">
-                  <h3 class="fs-5">盲人</h3>
-                  <h4 class="fs-7">古斯塔夫·克里姆</h4>
-                  <p class="mb-2">描繪一位左眼患有眼疾的老年男子，將深邃的皺紋和凹陷的臉頰表達痛苦的象徵。</p>
-                  <div class="d-flex justify-content-end">
-                    <a href="#" class="link-secondary stretched-link">More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide bg-transparent text-light">
-                <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Paul Cezanne</span>
-                <img src="../assets/images/窗簾與水壺.png" alt="窗簾與水壺-image">
-                <div class="card-body p-2">
-                  <h3 class="fs-5">窗簾與水壺</h3>
-                  <h4 class="fs-7">保羅·塞尚</h4>
-                  <p class="mb-2">這張畫作展現勻稱的構圖，窺探出塞尚旺盛的實驗精神，以知性態度來探究傳統的三次元空間。</p>
-                  <div class="d-flex justify-content-end">
-                    <a href="#" class="link-secondary stretched-link">More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide bg-transparent text-light">
-                <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Edvard Munch</span>
-                <img src="../assets/images/吶喊.jpg" alt="吶喊-image">
-                <div class="card-body p-2">
-                  <h3 class="fs-5">吶喊</h3>
-                  <h4 class="fs-7">愛德華·孟克</h4>
-                  <p class="mb-2">畫面的主體是在血紅色映襯下一個極其痛苦的表情，有些人認為該作品反映了現代人被存在主義的焦慮侵擾的意境。</p>
-                  <div class="d-flex justify-content-end">
-                    <a href="#" class="link-secondary stretched-link">More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide bg-transparent text-light">
-                <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Vincent VanGogh</span>
-                <img src="../assets/images/artist-info/星夜.jpg" alt="星夜-image">
-                <div class="card-body p-2">
-                  <h3 class="fs-5">星夜</h3>
-                  <h4 class="fs-7">文森梵谷</h4>
-                  <p class="mb-2">描繪了在法國普羅旺斯地的一家精神病院，裡面朝東的窗戶中所看到的夜景和一個想像中的村莊，此作品被廣泛認為是梵谷的代表作，被視為世界知名的西方畫作之一。</p>
-                  <div class="d-flex justify-content-end">
-                    <a href="#" class="link-secondary stretched-link">More</a>
-                  </div>
-                </div>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-button-next text-white"></div>
-            <div class="swiper-button-prev text-white"></div>
-            <div class="swiper-pagination"></div>
           </div>
+          <div class="swiper-button-next text-primary"></div>
+          <div class="swiper-button-prev text-primary"></div>
         </div>
-        
-        <!-- <div class="row flex-nowrap overflow-auto px-8 py-4  mb-7 mb-md-10 artworks">
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative" data-aos="fade-up">
-            <div class="card bg-transparent text-light">
-              <span class="text-light fs-6 position-absolute top-10 start-90 translate-middle z-3">Jan Vermeer</span>
-              <img src="../assets/images/戴珍珠耳環.png" alt="戴珍珠耳環-image">
-              <div class="card-body p-2">
-                <h3 class="fs-5">戴珍珠耳環的少女</h3>
-                <h4 class="fs-7">揚·維梅爾</h4>
-                <p class="mb-2">維梅爾最為著名的畫作，是想像中的人物畫作，一位穿著異國服飾的女孩、頭戴東方頭巾，耳環則鑲有大到不真實的珍珠。</p>
-                <div class="d-flex justify-content-end">
-                  <a href="#" class="link-secondary stretched-link">More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative" data-aos="fade-up">
-            <div class="card bg-transparent text-light">
-              <span class="text-light fs-6 position-absolute top-10 start-10 translate-middle">Raffaello Santi</span>
-              <img src="../assets/images/雅典學院.png" alt="雅典學院-image">
-              <div class="card-body p-2">
-                <h3 class="fs-5">雅典學院</h3>
-                <h4 class="fs-7">拉斐爾</h4>
-                <p class="mb-2">義大利文藝復興藝術家拉斐爾因受任裝飾梵蒂岡使徒宮，在1509年至1510年間創作的一幅濕壁畫。</p>
-                <div class="d-flex justify-content-end">
-                  <a href="#" class="link-secondary stretched-link">More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative" data-aos="fade-up">
-            <div class="card bg-transparent text-light">
-              <span class="text-light fs-6 position-absolute top-10 start-10 translate-middle">Gustav Klimt</span>
-              <img src="../assets/images/盲人.png" alt="盲人-image">
-              <div class="card-body p-2">
-                <h3 class="fs-5">盲人</h3>
-                <h4 class="fs-7">古斯塔夫·克里姆</h4>
-                <p class="mb-2">描繪一位左眼患有眼疾的老年男子，將深邃的皺紋和凹陷的臉頰表達痛苦的象徵。</p>
-                <div class="d-flex justify-content-end">
-                  <a href="#" class="link-secondary stretched-link">More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3 position-relative" data-aos="fade-up">
-            <div class="card bg-transparent text-light">
-              <span class="text-light fs-6 position-absolute top-10 start-10 translate-middle">Paul Cézanne</span>
-              <img src="../assets/images/窗簾與水壺.png" alt="窗簾與水壺-image">
-              <div class="card-body p-2">
-                <h3 class="fs-5">窗簾與水壺</h3>
-                <h4 class="fs-7">保羅·塞尚</h4>
-                <p class="mb-2">這張畫作展現勻稱的構圖，窺探出塞尚旺盛的實驗精神，以知性態度來探究傳統的三次元空間。</p>
-                <div class="d-flex justify-content-end">
-                  <a href="#" class="link-secondary stretched-link">More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="row justify-content-end mb-n13" >
           <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
             <a href="#" class="btn btn-light fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 shadow">View All<span class="material-icons">trending_flat</span></a>
@@ -285,8 +236,7 @@
         <div class=" col-12 col-lg-6">
           <div class="row mt-lg-9">
             <div class="col-12 col-lg-10 mb-6 mb-md-9 mb-lg-0" data-aos="fade-up">
-              <h2 class="fw-bolder mb-7">藝術家檢索<br class="d-md-none">平台簡介.</h2>
-              <div class="deco-dark-line ms-n11 mb-8"></div>
+              <h2 class="fw-bolder mb-11 deco-dark-long-line">藝術家檢索<br class="d-md-none">平台簡介.</h2>
               <p class="text-gray-light mb-6 mb-lg-5" data-aos="fade-up">我們的平台旨在成為藝術愛好者、收藏家和藝術界專業人士的首選工具。透過這個平台，您可以輕鬆地尋找世界各地的優秀藝術家，發掘他們的作品，並深入了解他們的創作背後的故事與想法。藝術家檢索平台具備不同搜索功能，讓您可以按照不同的關鍵字、類別條件來篩選藝術家，以找到最符合您需求的作品和藝術家資訊。同時，我們的平台也提供豐富的藝術家資料和作品展示，讓您能夠全面了解每位藝術家的生平、藝術背景和藝術成就。</p>
               <img src="../assets/images/簡介圖1.jpg" class="img-fluid d-lg-none" alt="背景圖" data-aos="fade-up">
             </div>
@@ -309,35 +259,5 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper4", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        cssMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-        breakpoints: {
-        "@0.00": {
-          slidesPerView: 1,
-        },
-        "@0.75": {
-          slidesPerView: 2,
-        },
-        "@1.00": {
-          slidesPerView: 3,
-        },
-        "@1.25": {
-          slidesPerView: 4,
-        },
-      }
-      });
-    </script>
   </body>
 </html>

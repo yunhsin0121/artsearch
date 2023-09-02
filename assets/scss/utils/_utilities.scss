@@ -662,6 +662,23 @@ $utilities: map-merge(
         5: 5,
       )
     ),
+    "bg-size": (
+      property: background-size,
+      class: bg-size,
+      values: (
+       cover:cover,
+       contain:contain,
+      )
+    ),
+    "bg-position": (
+      property: background-position,
+      class: bg-position,
+      values: (
+       center:center,
+       end:right top,
+       start:left center,
+      )
+    ),
     // scss-docs-end utils-visibility
   ),
   $utilities

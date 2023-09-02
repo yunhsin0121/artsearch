@@ -1,0 +1,39 @@
+.mainSwiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.swiper-pagination-bullet-active{
+    background: #AA7C09;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+.bigSwiper {
+    height: 80%;
+    width: 100%;
+}
+.smallSwiper {
+    width: 91.3%;
+    height: 100%;
+}
+.smallSwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+.smallSwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}   
