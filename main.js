@@ -1,8 +1,8 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './assets/js/jquery.js';
-import './assets/js/swiper.js';
-import './assets/js/thumbs-swiper.js';
+// import './assets/js/swiper.js';
+// import './assets/js/thumbs-swiper.js';
 AOS.init();
 // $(document).ready(function () {
 //     $(".like").click(function (e) { 
