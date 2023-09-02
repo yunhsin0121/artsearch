@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/artsearch/assets/logo-ecb39e98.png">
+  <title>搜尋－ART SEARCH</title>
+  <script type="module" crossorigin src="/artsearch/assets/main-c6fbc068.js"></script>
+  <link rel="stylesheet" href="/artsearch/assets/main-5b38f042.css">
+</head>
+
+<body>
+  <nav class="container py-4 py-lg-7">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="mb-0">
+          <img src="/artsearch/assets/logo-ecb39e98.png" alt="logo" class="img-fluid logo-title" >
+          <h1 class="d-none">ART SEARCH</h1>
+        </a>
+        <ul class="d-flex list-unstyled align-items-center mb-0">
+          <li>
+            <a class="link-dark me-4 me-md-7 fw-bold" href="info.html">展覽資訊</a>
+          </li>
+          <li>
+            <a class="link-dark fw-bold" href="artist.html">藝術家</a>
+          </li>
+        </ul>
+        <div class="d-flex" role="search">
+          <a href="search.html" class="text-dark me-2 me-md-3"><span class="material-icons fs-4 mb-0">search</span></a>
+          <a href="login.html" class="text-dark"><span class="material-icons fs-4 mb-0">account_circle</span></a>
+        </div>
+      </div>
+  </nav>
+  <section class="bg-secondary-light mt-8 mt-md-11">
+      <div class="container py-8 py-md-10 py-lg-15 px-7 px-md-0 position-relative">
+        <h2 class="text-primary fs-1 fs-md-1 opacity-50 position-absolute top-0 start-40 start-md-30 start-lg-30 start-xl-25 start-xxl-20  translate-middle ">Searching</h2>
+        <h3 class="fs-4 fw-bolder justify-content-start mb-4 mb-md-3">想要找什麼藝術家呢?</h3>
+        <form action="#">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-7">
+              <input type="text" class="form-control fs-7 py-4 mb-4 mb-md-0 border-top-md-0 border-start-md-0 border-end-md-0 border-dark bg-secondary-light rounded-0" placeholder="關鍵字">
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+              <select class="form-select fs-7 fw-bold py-4 mb-4 mb-md-0 border-top-md-0 border-start-md-0 border-end-md-0 border-dark border-dark bg-secondary-light rounded-0" aria-label="Default select example">
+                <option selected>印象派</option>
+                <option value="1">超現實派</option>
+                <option value="2">表現主義</option>
+                <option value="2">全選</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-3">
+              <button type="submit" class="btn btn-primary text-white fs-7 fw-bold w-100 py-5 px-md-7 d-flex justify-content-between align-items-center">搜尋<span class="material-icons">search</span></button>
+            </div>
+          </div>
+        </form>
+       </div>
+  </section>
+  <section class="container py-7 py-lg-14">
+    <div class="row justify-content-between mb-8 mb-md-10">
+      <div class="col-md-8 col-lg-5 px-0 px-md-2" data-aos="fade-up">
+        <h2 class="fw-bolder ms-7 ms-md-0">熱門藝術家.</h2>
+        <div class="d-flex flex-column flex-md-row align-items-md-center">
+          <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 deco-dark-line">Trending Artists</p>
+        </div>
+      </div>
+      <div class="col-3 d-none d-md-block" data-aos="fade-up">
+        <a href="#" class="btn btn-dark fw-bold d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
+      </div>
+    </div>
+      <ul class="row flex-wrap list-unstyled">
+        <li class="col-6 col-md-4 mb-3 mb-md-9" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="/artsearch/assets/保羅塞尚-531a24c2.png" class="card-img" alt="保羅塞尚-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="text-gray-light text-center fs-8 fs-md-5 lh-sm up-hover w-100">保羅·塞尚</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 mb-3 mb-md-9" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="/artsearch/assets/愛德華·馬奈-beb07624.png" class="card-img" alt="愛德華·馬奈-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="text-gray-light text-center fs-8 fs-md-5 lh-sm up-hover w-100">愛德華·馬奈</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 mb-3 mb-md-9" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="/artsearch/assets/洛德-17f1c045.png" class="card-img" alt="洛德-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="text-gray-light text-center fs-8 fs-md-5 lh-sm up-hover w-100">洛德·莫內家</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 mb-3 mb-md-9" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="/artsearch/assets/米開朗基羅-720337f9.png" class="card-img" alt="米開朗基羅-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="artist-info.html" class="text-gray-light text-center fs-8 fs-md-5 lh-sm up-hover w-100">米開朗基羅</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 mb-3 mb-md-9" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="/artsearch/assets/李奧納多·達文西-980faf10.png" class="card-img" alt="達文西-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="text-gray-light text-center fs-8 fs-md-5 lh-sm up-hover w-100">洛李奧納多·達文西</a>
+            </div>
+          </div>
+        </li>
+        <li class="col-6 col-md-4 mb-3 mb-md-9" data-aos="fade-up">
+          <div class="card position-relative">
+            <img src="/artsearch/assets/彼得·保羅·魯本斯-d85930fb.png" class="card-img" alt="魯本斯-image">
+            <div class="d-flex justify-content-center mt-2">
+              <a href="#" class="text-gray-light text-center fs-8 fs-md-5 lh-sm up-hover w-100">彼得·保羅·魯本斯</a>
+            </div>
+          </div>
+        </li> 
+      </ul>
+      <div class="col-12 d-md-none mt-3 mb-2" data-aos="fade-up">
+        <a href="#" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
+      </div>
+    </section>
+  <section class="bg-primary-light bg-size-cover bg-position-end pt-9 pt-md-11 pb-11 mb-9 mb-lg-14" style="background-image: url(/artsearch/assets/bg-d5c526b8.png);" data-aos="fade-up">
+    <div class="container">
+      <div class="row justify-content-between mb-8 mb-md-10">
+        <div class="col px-0 px-lg-2" data-aos="fade-up">
+          <h3 class="fs-2 fw-bolder text-white ms-7 ms-md-0 ">您可能會喜歡...</h3>
+          <div class="d-flex flex-column flex-md-row align-items-md-center">
+            <p class="fs-8 fs-md-4 text-white  mb-md-0 ms-7 ms-md-0 deco-light-line">You might Like</p>
+          </div>
+        </div>
+      </div>
+      <div class="artist-info container">
+        <div class="swiper mySwiper3" data-aos="fade-up">
+          <div class="swiper-wrapper py-8 d-flex align-items-center">
+            <div class="swiper-slide">
+              <img src="/artsearch/assets/歐仁·德拉克羅瓦(big)-783c4465.jpg" class="shadow" alt="歐仁·德拉克羅瓦-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-md-6 fs-4 h-100 w-100 text-center d-flex justify-content-center align-items-center">歐仁 · 德拉克羅瓦</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/artsearch/assets/克洛德·莫內(big)-8e443141.jpg" class="shadow" alt="克洛德·莫內-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center text-center">克洛德·莫內</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/artsearch/assets/安東尼·范戴克(big)-3dad5095.jpg" class="shadow" alt="安東尼·范戴克-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">安東尼·范戴克</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/artsearch/assets/巴勃羅·畢卡索(big)-a68c8fd9.jpg" class="shadow" alt="巴勃羅·畢卡索-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">巴勃羅·畢卡索</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/artsearch/assets/奧諾雷·杜米埃(big)-56dc9ef9.jpg" class="shadow h-100" alt="奧諾雷·杜米埃-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">奧諾雷·杜米埃</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/artsearch/assets/芙烈達·卡蘿(big)-9e64bfed.png" class="shadow h-100" alt="芙烈達·卡蘿-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">芙烈達·卡蘿</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/artsearch/assets/卡米耶·畢沙羅(big)-c1079f54.jpg" class="shadow" alt="卡米耶·畢沙羅-image">
+              <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">卡米耶·畢沙羅</a>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <img src="/artsearch/assets/文森梵谷(big)-c4501d2c.jpg" class="shadow h-100" alt="文森-image">
+              <a href="artist-info.html" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">文森·梵谷</a>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next text-primary"></div>
+          <div class="swiper-button-prev text-primary"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-top border-gray-light">
+  <div class="container py-8 py-md-10 py-lg-12">
+    <div class="d-flex justify-content-md-between flex-column flex-md-row">
+      <a href="index.html" class="text-gray-light fs-8 fs-md-7 mb-2 md-md-0">藝術家檢索平台</a>
+      <p class="text-gray-light mb-0">Copyright © 2023 All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+      followFinger : false,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+  <script>
+    var swiper3 = new Swiper(".mySwiper3", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      followFinger : false,
+      mousewheel: {
+        invert: true,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+        },
+        "@1.00": {
+          slidesPerView: 4,
+        },
+    },
+  });
+  </script>
+</body>
+
+</html>
