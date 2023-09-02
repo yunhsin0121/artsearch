@@ -11,7 +11,7 @@
   <link rel="icon" type="image/x-icon" href="/artsearch/assets/logo-ecb39e98.png">
   <title>ART SEARCH</title>
 
-  <script type="module" crossorigin src="/artsearch/assets/main-94077410.js"></script>
+  <script type="module" crossorigin src="/artsearch/assets/main-79910cff.js"></script>
   <link rel="stylesheet" href="/artsearch/assets/main-5b38f042.css">
 </head>
 <body>
@@ -154,5 +154,24 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+    <script>
+      $(document).ready(function () {
+      $(".like").click(function (e) { 
+          e.preventDefault();
+          $(this).toggleClass('fa-regular fa-heart');
+          $(this).toggleClass('fa-solid fa-heart');
+      });
+      $('.up-hover').hover(function () {
+          // over
+          // e.preventDefault();
+          $(this).removeClass('up-hover');
+          $(this).addClass('up-hover-after');
+      }, function () {
+          // out
+          $(this).removeClass('up-hover-after');
+          $(this).addClass('up-hover');
+      }
+      );
+  });
+    </script>
 </html>
