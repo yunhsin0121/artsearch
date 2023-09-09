@@ -7,29 +7,31 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="/artsearch/assets/logo-ecb39e98.png">
     <title>ART SEARCH</title>
-    <script type="module" crossorigin src="/artsearch/assets/main-79910cff.js"></script>
-    <link rel="stylesheet" href="/artsearch/assets/main-5b38f042.css">
+    <script type="module" crossorigin src="/artsearch/assets/main-72eab2eb.js"></script>
+    <link rel="stylesheet" href="/artsearch/assets/main-33b8dfa3.css">
   </head>
   <body>
     <nav class="container py-4 py-lg-7">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="mb-0">
+        <a href="index.html" class="mb-0 pulse-animate">
           <img src="/artsearch/assets/logo-ecb39e98.png" alt="logo" class="img-fluid logo-title" >
           <h1 class="d-none">ART SEARCH</h1>
         </a>
         <ul class="d-flex list-unstyled align-items-center mb-0">
-          <li>
+          <li class="pulse-animate">
             <a class="link-dark me-4 me-md-7 fw-bold" href="info.html">展覽資訊</a>
           </li>
-          <li>
+          <li class="pulse-animate">
             <a class="link-dark fw-bold" href="artist.html">藝術家</a>
           </li>
         </ul>
         <div class="d-flex" role="search">
-          <a href="search.html" class="text-dark me-2 me-md-3"><span class="material-icons fs-4 mb-0">search</span></a>
-          <a href="login.html" class="text-dark"><span class="material-icons fs-4 mb-0">account_circle</span></a>
+          <a href="search.html" class="text-dark me-2 me-md-3 pulse-animate"><span class="material-icons fs-4 mb-0">search</span></a>
+          <a href="login.html" class="text-dark me-2 me-md-3 pulse-animate"><span class="material-icons fs-4 mb-0">account_circle</span></a>
+          <a href="collect.html" class="text-dark pulse-animate"><span class="material-icons fs-4 mb-0">favorite</span></a>
         </div>
       </div>
   </nav>    <section class="container mb-md-12 mb-lg-16">
@@ -64,7 +66,7 @@
               </select>
             </div>
             <div class="col-12 col-md-3">
-              <button type="submit" class="btn btn-primary text-white fs-7 fw-bold w-100 py-5 px-md-7 d-flex justify-content-between align-items-center">搜尋<span class="material-icons">search</span></button>
+              <button type="submit" class="btn btn-primary text-white fs-7 fw-bold w-100 py-5 px-md-7 d-flex justify-content-between align-items-center pulse-animate">搜尋<span class="material-icons">search</span></button>
             </div>
           </div>
         </form>
@@ -79,7 +81,7 @@
           </div>
         </div>
         <div class="col-3 d-none d-md-block" data-aos="fade-up">
-          <a href="#" class="btn btn-dark fw-bold d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
+          <a href="artist.html" class="btn btn-dark fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 pulse-animate">View All<span class="material-icons">trending_flat</span></a>
         </div>
       </div>
       <ul class="row flex-wrap list-unstyled">
@@ -133,7 +135,7 @@
         </li>
       </ul>
       <div class="col-12 d-md-none mt-3 mb-2" data-aos="fade-up">
-        <a href="#" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
+        <a href="artist.html" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7 pulse-animate">View All<span class="material-icons">trending_flat</span></a>
       </div>
     </section>
     <section class="pt-9 pt-md-11 pt-lg-16 pb-11 bg-size-cover bg-position-end" style="background-image: url(/artsearch/assets/bg-d5c526b8.png);" data-aos="fade-up">
@@ -146,15 +148,15 @@
             </div>
           </div>
         </div>
-        <div class="swiper-father px-10 position-relative">
+        <div class="swiper-father position-relative">
           <div class="swiper-container">
             <div class="swiper mainSwiper">
               <div class="swiper-wrapper d-flex align-items-center">
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="/artsearch/assets/戴珍珠耳環-51374572.png" alt="戴珍珠耳環-image">
-                    <div class="card-body">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-70 translate-middle-y z-5">Jan Vermeer</span>
+                    <img src="/artsearch/assets/戴珍珠耳環-51374572.png" class="shadow" alt="戴珍珠耳環-image">
+                    <div class="card-body p-2">
                       <h3 class="fs-5">戴珍珠耳環的少女</h3>
                       <h4 class="fs-7">揚·維梅爾</h4>
                       <p class="mb-2">維梅爾最為著名的畫作，是想像中的人物畫作，一位穿著異國服飾的女孩、頭戴東方頭巾，耳環則鑲有大到不真實的珍珠。</p>
@@ -165,9 +167,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="/artsearch/assets/雅典學院-6dde8123.png" alt="雅典學院-image">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-70 translate-middle-y z-5">Raffaello Santi</span>
+                    <img src="/artsearch/assets/雅典學院-6dde8123.png" class="shadow " alt="雅典學院-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">雅典學院</h3>
                       <h4 class="fs-7">拉斐爾</h4>
@@ -179,9 +181,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="/artsearch/assets/盲人-a1b6c09f.png" alt="盲人-image">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Gustav Klimt</span>
+                    <img src="/artsearch/assets/盲人-a1b6c09f.png" class="shadow" alt="盲人-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">盲人</h3>
                       <h4 class="fs-7">古斯塔夫·克里姆</h4>
@@ -193,9 +195,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="/artsearch/assets/窗簾與水壺-abd51a3c.png" alt="窗簾與水壺-image">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-70 translate-middle-y z-5">Paul Cézanne</span>
+                    <img src="/artsearch/assets/窗簾與水壺-abd51a3c.png" class="shadow" alt="窗簾與水壺-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">窗簾與水壺</h3>
                       <h4 class="fs-7">保羅·塞尚</h4>
@@ -207,9 +209,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="/artsearch/assets/吶喊-6d3e59e8.jpg" alt="吶喊-image">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Edvard Munch</span>
+                    <img src="/artsearch/assets/吶喊-6d3e59e8.jpg" class="shadow" alt="吶喊-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">吶喊</h3>
                       <h4 class="fs-7">愛德華·孟克</h4>
@@ -221,9 +223,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="/artsearch/assets/星夜-f3c53ab1.jpg" alt="星夜-image">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Vincent van Gogh</span>
+                    <img src="/artsearch/assets/星夜-f3c53ab1.jpg" class="shadow" alt="星夜-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">星夜</h3>
                       <h4 class="fs-7">文森梵谷</h4>
@@ -238,12 +240,10 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
-          <div class="swiper-button-next text-primary"></div>
-          <div class="swiper-button-prev text-primary"></div>
         </div>
         <div class="row justify-content-end mb-n13" >
           <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
-            <a href="#" class="btn btn-light fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 shadow">View All<span class="material-icons">trending_flat</span></a>
+            <a href="#" class="btn btn-light fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 shadow pulse-animate">View All<span class="material-icons">trending_flat</span></a>
           </div>
         </div>
       </div>
@@ -274,6 +274,11 @@
         </div>
       </div>
     </section>
+    <div class="slide-up position-fixed bottom-3 end-3">
+      <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(/artsearch/assets/circle-f8708d4b.png) no-repeat; width: 50px; height: 50px;">
+        <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+      </a>
+    </div>
     <footer class="border-top border-gray-light">
   <div class="container py-8 py-md-10 py-lg-12">
     <div class="d-flex justify-content-md-between flex-column flex-md-row">
@@ -287,11 +292,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       $(document).ready(function () {
-      $(".like").click(function (e) { 
-          e.preventDefault();
-          $(this).toggleClass('fa-regular fa-heart');
-          $(this).toggleClass('fa-solid fa-heart');
-      });
       $('.up-hover').hover(function () {
           // over
           // e.preventDefault();
@@ -303,6 +303,23 @@
           $(this).addClass('up-hover');
       }
       );
+
+      $('.btn-up').click(function (e) { 
+          e.preventDefault();
+          
+          $('html,body').animate({
+              scrollTop:0},100);
+      });
+
+      $('.slide-up').hide();
+      $(window).scroll(function(){
+          if($(window).scrollTop()>200){
+              $('.slide-up').fadeIn();
+          }
+          else{
+              $('.slide-up').fadeOut();
+          }
+      });
   });
     </script>
   </body>

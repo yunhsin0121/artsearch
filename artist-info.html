@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="/artsearch/assets/logo-ecb39e98.png">
     <title>文森·梵谷－ART SEARCH</title>
-    <script type="module" crossorigin src="/artsearch/assets/main-79910cff.js"></script>
-    <link rel="stylesheet" href="/artsearch/assets/main-5b38f042.css">
+    <script type="module" crossorigin src="/artsearch/assets/main-72eab2eb.js"></script>
+    <link rel="stylesheet" href="/artsearch/assets/main-33b8dfa3.css">
   </head>
   <body>
     <nav class="container py-4 py-lg-7">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="mb-0">
+        <a href="index.html" class="mb-0 pulse-animate">
           <img src="/artsearch/assets/logo-ecb39e98.png" alt="logo" class="img-fluid logo-title" >
           <h1 class="d-none">ART SEARCH</h1>
         </a>
         <ul class="d-flex list-unstyled align-items-center mb-0">
-          <li>
+          <li class="pulse-animate">
             <a class="link-dark me-4 me-md-7 fw-bold" href="info.html">展覽資訊</a>
           </li>
-          <li>
+          <li class="pulse-animate">
             <a class="link-dark fw-bold" href="artist.html">藝術家</a>
           </li>
         </ul>
         <div class="d-flex" role="search">
-          <a href="search.html" class="text-dark me-2 me-md-3"><span class="material-icons fs-4 mb-0">search</span></a>
-          <a href="login.html" class="text-dark"><span class="material-icons fs-4 mb-0">account_circle</span></a>
+          <a href="search.html" class="text-dark me-2 me-md-3 pulse-animate"><span class="material-icons fs-4 mb-0">search</span></a>
+          <a href="login.html" class="text-dark me-2 me-md-3 pulse-animate"><span class="material-icons fs-4 mb-0">account_circle</span></a>
+          <a href="collect.html" class="text-dark pulse-animate"><span class="material-icons fs-4 mb-0">favorite</span></a>
         </div>
       </div>
   </nav>    <section class="container py-4 pb-md-11">
@@ -38,12 +40,11 @@
         <h2 class="fs-2 fw-bolder ms-7 ms-md-0 me-3 text-primary mb-4">文森·梵谷</h2>
         <a href="#" class="like fa-regular fa-heart fs-2 mb-0 text-primary"></a>
       </div>
-      <div class="row">
-        <div class="mb-8 mb-xl-10">
-          <h3 class="fs-4 fw-bold ms-7 ms-md-0">生平簡介.</h3>
+      <div class="row mb-8 mb-md-10">
+        <div class="col-md-10 col-lg-8" data-aos="fade-up">
+          <h2 class="fw-bolder ms-7 ms-md-0">生平簡介.</h2>
           <div class="d-flex flex-column flex-md-row align-items-md-center">
-            <p class="fs-7 fs-md-6 mb-4 mb-md-0 ms-7 ms-md-0 me-9">Biography</p>
-            <div class="deco-dark-line"></div>
+            <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 deco-dark-line">Biography</p>
           </div>
         </div>
       </div>
@@ -73,12 +74,11 @@
     </section>
     <section class="bg-primary-light bg-size-cover bg-position-end pt-9 pt-md-11 pb-11 mb-9 mb-lg-14" style="background-image: url(/artsearch/assets/bg-dark-43af048c.png);" data-aos="fade-up">
       <div class="container">
-        <div class="row justify-content-between mb-8 mb-md-10">
-          <div class="col px-0 px-lg-2" data-aos="fade-up">
-            <h3 class="fs-4 fw-bolder ms-7 ms-md-0">作品選集.</h3>
+        <div class="row mb-8 mb-md-10">
+          <div class="col-md-10 col-lg-8" data-aos="fade-up">
+            <h2 class="fw-bolder ms-7 ms-md-0">作品選集.</h2>
             <div class="d-flex flex-column flex-md-row align-items-md-center">
-              <p class="fs-7 fs-md-6 mb-4 mb-md-0 ms-7 ms-md-0 me-9">Artworks</p>
-              <div class="deco-dark-line"></div>
+              <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 deco-dark-line">Artworks</p>
             </div>
           </div>
         </div>
@@ -133,6 +133,11 @@
         </div>
       </div>
     </section>
+    <div class="slide-up position-fixed bottom-3 end-3">
+      <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(/artsearch/assets/circle-f8708d4b.png) no-repeat; width: 50px; height: 50px;">
+        <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+      </a>
+    </div>
     <footer class="border-top border-gray-light">
   <div class="container py-8 py-md-10 py-lg-12">
     <div class="d-flex justify-content-md-between flex-column flex-md-row">
@@ -163,6 +168,23 @@
         $(this).addClass('up-hover');
     }
     );
+
+    $('.btn-up').click(function (e) { 
+        e.preventDefault();
+        
+        $('html,body').animate({
+            scrollTop:0},100);
+    });
+
+    $('.slide-up').hide();
+    $(window).scroll(function(){
+        if($(window).scrollTop()>200){
+            $('.slide-up').fadeIn();
+        }
+        else{
+            $('.slide-up').fadeOut();
+        }
+    });
 });
     </script>
   </body>
