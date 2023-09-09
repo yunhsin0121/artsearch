@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
   <title>搜尋－ART SEARCH</title>
 </head>
@@ -34,7 +35,7 @@
               </select>
             </div>
             <div class="col-12 col-md-3">
-              <button type="submit" class="btn btn-primary text-white fs-7 fw-bold w-100 py-5 px-md-7 d-flex justify-content-between align-items-center">搜尋<span class="material-icons">search</span></button>
+              <button type="submit" class="btn btn-primary text-white fs-7 fw-bold w-100 py-5 px-md-7 d-flex justify-content-between align-items-center pulse-animate">搜尋<span class="material-icons">search</span></button>
             </div>
           </div>
         </form>
@@ -49,7 +50,7 @@
         </div>
       </div>
       <div class="col-3 d-none d-md-block" data-aos="fade-up">
-        <a href="#" class="btn btn-dark fw-bold d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
+        <a href="artist.html" class="btn btn-dark fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 pulse-animate">View All<span class="material-icons">trending_flat</span></a>
       </div>
     </div>
       <ul class="row flex-wrap list-unstyled">
@@ -103,7 +104,7 @@
         </li> 
       </ul>
       <div class="col-12 d-md-none mt-3 mb-2" data-aos="fade-up">
-        <a href="#" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
+        <a href="artist.html" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7 pulse-animate">View All<span class="material-icons">trending_flat</span></a>
       </div>
     </section>
   <section class="bg-primary-light bg-size-cover bg-position-end pt-9 pt-md-11 pb-11 mb-9 mb-lg-14" style="background-image: url(../assets/images/bg.png);" data-aos="fade-up">
@@ -179,7 +180,11 @@
       </div>
     </div>
   </section>
-
+  <div class="slide-up position-fixed bottom-3 end-3">
+    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+      <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+    </a>
+  </div>
   <%- include('./layout/footer'); -%>
 
   <script type="module" src="../main.js"></script>
@@ -204,6 +209,23 @@
         $(this).addClass('up-hover');
     }
     );
+
+    $('.btn-up').click(function (e) { 
+        e.preventDefault();
+        
+        $('html,body').animate({
+            scrollTop:0},100);
+    });
+
+    $('.slide-up').hide();
+    $(window).scroll(function(){
+        if($(window).scrollTop()>200){
+            $('.slide-up').fadeIn();
+        }
+        else{
+            $('.slide-up').fadeOut();
+        }
+    });
 });
   </script>
 </body>

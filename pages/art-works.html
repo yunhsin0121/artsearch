@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
   <title>作品介紹－ART SEARCH</title>
 </head>
@@ -66,18 +67,17 @@
   <section class="container pt-4 pb-9 py-md-12">
     <div class="row justify-content-center align-items-center">
       <div class="col-12 col-md-7 col-lg-9 mb-3 mb-md-0">
-        <div class="row justify-content-between mb-8 mb-md-10">
-          <div class="col px-0 px-lg-2" data-aos="fade-up">
-            <h3 class="fs-4 fw-bolder ms-7 ms-md-0">作品簡介.</h3>
+        <div class="row mb-8 mb-md-10">
+          <div class="col-md-10 col-lg-8" data-aos="fade-up">
+            <h2 class="fw-bolder ms-7 ms-md-0">作品簡介.</h2>
             <div class="d-flex flex-column flex-md-row align-items-md-center">
-              <p class="fs-7 fs-md-6 mb-4 mb-md-0 ms-7 ms-md-0 me-9">Introduction</p>
-              <div class="deco-dark-line"></div>
+              <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 deco-dark-line">Introduction</p>
             </div>
           </div>
         </div>
         <div class="d-flex flex-column" data-aos="fade-up">
           <p class="text-gray-light mb-2">星夜為荷蘭後印象派畫家，文森·梵谷著名的油畫之一，這幅畫作於1889年6月所繪製，描繪了在法國普羅旺斯地區聖雷米的一家精神病院朝東的窗戶所看到的夜晚景色和一個想像中的村莊。<br>自1941年以來，該畫作莉莉·P·布利斯捐贈於紐約現代藝術博物館中永久收藏，被廣泛認為是梵谷的代表作，也被視為世界知名的西方畫作之一。</p>
-          <a href="artist-info.html" class="fs-6 fw-bold align-self-end link-primary">文森·梵谷</a>
+          <a href="artist-info.html" class="fs-6 fw-bold align-self-end link-primary pulse-animate">文森·梵谷</a>
         </div>
       </div>
       <div class="col-12 col-md-5 col-lg-3 mb-3 mb-md-9" data-aos="fade-up">
@@ -89,12 +89,11 @@
   </section>
   <section class="bg-primary-light bg-size-cover bg-position-end pt-9 pt-md-11 pb-11 mb-9 mb-lg-14" style="background-image: url(../assets/images/bg.png);" data-aos="fade-up">
     <div class="container">
-      <div class="row justify-content-between mb-8 mb-md-10">
-        <div class="col px-0 px-lg-2" data-aos="fade-up">
-          <h3 class="fs-4 fw-bolder text-white ms-7 ms-md-0 ">其他作品.</h3>
+      <div class="row mb-8 mb-md-10">
+        <div class="col-md-10 col-lg-8 text-white" data-aos="fade-up">
+          <h2 class="fw-bolder ms-7 ms-md-0">其他作品</h2>
           <div class="d-flex flex-column flex-md-row align-items-md-center">
-            <p class="fs-7 fs-md-6 text-white  mb-md-0 ms-7 ms-md-0 me-9">Artworks</p>
-            <div class="deco-light-line"></div>
+            <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 deco-light-line">Artworks</p>
           </div>
         </div>
       </div>
@@ -161,7 +160,11 @@
       </div>
     </div>
   </section>
-
+  <div class="slide-up position-fixed bottom-3 end-3">
+    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+      <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+    </a>
+  </div>
   <%- include('./layout/footer'); -%>
 
   <script type="module" src="../main.js"></script>
@@ -186,6 +189,23 @@
       $(this).addClass('up-hover');
   }
   );
+
+  $('.btn-up').click(function (e) { 
+        e.preventDefault();
+        
+        $('html,body').animate({
+            scrollTop:0},100);
+    });
+
+    $('.slide-up').hide();
+    $(window).scroll(function(){
+        if($(window).scrollTop()>200){
+            $('.slide-up').fadeIn();
+        }
+        else{
+            $('.slide-up').fadeOut();
+        }
+    });
 });
   </script>
 </body>

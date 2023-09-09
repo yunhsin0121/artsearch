@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
   <title>ART SEARCH</title>
 
@@ -22,9 +23,9 @@
           </div>
       </div>
       <div class="d-flex justify-content-center mb-8">
-          <button type="button" class="btn btn-primary text-white px-6 px-md-7 me-7">A - Z</button>
-          <button type="button" class="btn btn-primary text-white px-6 px-md-7 me-7">年代</button>
-          <button type="button" class="btn btn-primary text-white px-6 px-md-7">風格</button>
+          <button type="button" class="btn btn-primary text-white px-6 px-md-7 me-7 pulse-animate">A - Z</button>
+          <button type="button" class="btn btn-primary text-white px-6 px-md-7 me-7 pulse-animate">年代</button>
+          <button type="button" class="btn btn-primary text-white px-6 px-md-7 pulse-animate">風格</button>
       </div>
       <ul class="row flex-wrap list-unstyled" >
         <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-9" data-aos="fade-up">
@@ -121,8 +122,12 @@
           <li class="page-item"><a class="page-link" href="#">Next</a></li>
         </ul>
       </nav>
+      <div class="slide-up position-fixed bottom-3 end-3">
+        <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+          <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+        </a>
+      </div>
     </section>
-
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
@@ -146,6 +151,23 @@
           $(this).addClass('up-hover');
       }
       );
+
+      $('.btn-up').click(function (e) { 
+        e.preventDefault();
+        
+        $('html,body').animate({
+            scrollTop:0},100);
+    });
+
+    $('.slide-up').hide();
+    $(window).scroll(function(){
+        if($(window).scrollTop()>200){
+            $('.slide-up').fadeIn();
+        }
+        else{
+            $('.slide-up').fadeOut();
+        }
+    });
   });
     </script>
 </html>

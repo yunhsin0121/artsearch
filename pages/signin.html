@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
   <title>會員註冊－ART SEARCH</title>
 </head>
@@ -31,28 +32,28 @@
           <div class="col-md-6 align-items-center mb-7 mb-md-0" data-aos="fade-right">
             <div class="mb-5">
               <label for="name" class="form-label">姓名</label>
-              <input type="name" name="name" class="form-control" placeholder="王小明"  required>
+              <input type="name" id="name" name="name" class="form-control" placeholder="王小明"  required>
               <div class="invalid-feedback">
                   請重新輸入姓名
               </div>
             </div>
             <div class="mb-5">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" name="email" class="form-control" placeholder="example@gmail.com"  required>
+              <label for="setEmail" class="form-label">Email</label>
+              <input type="email" id="setEmail" name="email" class="form-control" placeholder="example@gmail.com"  required>
               <div class="invalid-feedback">
                   請重新輸入信箱
               </div>
             </div>
             <div class="mb-5">
-              <label for="password" class="form-label">設定密碼</label>
-              <input type="password" name="password" class="form-control" placeholder="6~12位數且含英文及數字" required>
+              <label for="setPassword" class="form-label">設定密碼</label>
+              <input type="password" id="setPassword" name="password" class="form-control" placeholder="6~12位數且含英文及數字" required>
               <div class="invalid-feedback">
                   請重新輸入密碼
               </div>
             </div>
             <div class="mb-5">
               <label for="check-password" class="form-label">再次輸入密碼</label>
-              <input type="password" name="check-password" class="form-control" placeholder="6~12位數且含英文及數字" required>
+              <input type="password" id="check-password" name="check-password" class="form-control" placeholder="6~12位數且含英文及數字" required>
               <div class="invalid-feedback">
                   請再次輸入密碼
               </div>
@@ -61,18 +62,18 @@
           <div class="col-md-6 d-flex flex-column justify-content-between" data-aos="fade-left">
             <div>
               <p class="mb-3 fs-6"><strong>註冊須知.</strong></p>
-              <p class="mb-3 ">本網站僅收集足以識別使用者身分的個人資料，僅供用於本網站內部，並依照收集之目的進行處理和利用。<br>除非事先說明、或為完成提供服務及履行合約義務之必要，依照相關法令規定或有權主管機關之命令或要求，否則本網站不會將足以識別使用者身分的個人資料提供給第三人（包括境內及境外）、或移作收集目的以外之使用。<br> 在會員有效期間，以及法令所定應保存之期間內，本網站會持續保管、處理及利用。</p>
+              <p class="mb-3">本網站僅收集足以識別使用者身分的個人資料，僅供用於本網站內部，並依照收集之目的進行處理和利用。<br>除非事先說明、或為完成提供服務及履行合約義務之必要，依照相關法令規定或有權主管機關之命令或要求，否則本網站不會將足以識別使用者身分的個人資料提供給第三人（包括境內及境外）、或移作收集目的以外之使用。<br> 在會員有效期間，以及法令所定應保存之期間內，本網站會持續保管、處理及利用。</p>
               <div class="mb-7 md-md-0">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" required>
-                  <label class="form-check-label">
+                  <input class="form-check-input" id="registerTreaty" type="checkbox" required>
+                  <label class="form-check-label" for="registerTreaty">
                     我已閱讀完畢且同意
                   </label>
                 </div>
               </div>
             </div>
             <div class="d-flex flex-column justify-content-end align-items-end">
-              <button class="btn btn-primary py-3 mb-3 text-white d-flex align-items-center justify-content-between w-100 w-lg-50">註冊<span class="material-icons">trending_flat</span></button>
+              <button class="btn btn-primary py-3 mb-3 text-white d-flex align-items-center justify-content-between w-100 w-lg-50 pulse-animate">註冊<span class="material-icons">trending_flat</span></button>
             </div>
           </div>
         </div>
@@ -80,7 +81,11 @@
       </div>
     </div>
   </section>
-
+  <div class="slide-up position-fixed bottom-3 end-3">
+    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+      <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+    </a>
+  </div>
 
   <%- include('./layout/footer'); -%>
 
@@ -109,6 +114,22 @@
             }, false)
         })
     })()
+    $('.btn-up').click(function (e) { 
+        e.preventDefault();
+        
+        $('html,body').animate({
+            scrollTop:0},100);
+        });
+
+        $('.slide-up').hide();
+        $(window).scroll(function(){
+            if($(window).scrollTop()>200){
+                $('.slide-up').fadeIn();
+            }
+            else{
+                $('.slide-up').fadeOut();
+            }
+        });
 </script>
 </body>
 

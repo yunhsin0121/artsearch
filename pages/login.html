@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
   <title>展覽資訊－ART SEARCH</title>
 </head>
@@ -26,30 +27,30 @@
                 <form action="#" class="needs-validation" novalidate>
                     <div class="mb-5">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control" placeholder="example@gmail.com"  required>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="example@gmail.com"  required>
                         <div class="invalid-feedback">
                             請重新輸入信箱
                           </div>
                     </div>
                     <div class="mb-5">
                         <label for="password" class="form-label">密碼</label>
-                        <input type="password" name="password" class="form-control" placeholder="6~12位數且含英文及數字" required>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="6~12位數且含英文及數字" required>
                         <div class="invalid-feedback">
                             請重新輸入密碼
                           </div>
                     </div>
                     <div class="form-check-inline mb-5">
-                        <input type="checkbox" name="rememberPassword" class="form-check-input">
+                        <input type="checkbox" id="rememberPassword" name="rememberPassword" class="form-check-input">
                         <label for="rememberPassword" class="form-check-label">記住我的密碼</label>
                     </div>
                     <div class="row justify-content-between">
                         <div class="col-md-4 col-lg-6 mb-3 mb-md-0">
-                            <a href="#" class="link-primary fw-bold d-flex align-items-center">忘記密碼<span class="material-icons ms-1">key</span></a>
+                            <a href="#" class="link-primary fw-bold d-flex align-items-center pulse-animate">忘記密碼<span class="material-icons ms-1">key</span></a>
                         </div>
                         <div class="col-md-8 col-lg-4">
                             <div class="d-flex flex-column justify-content-end">
-                                <button class="btn btn-primary py-3 mb-3 text-white d-flex align-items-center justify-content-between">登入<span class="material-icons">trending_flat</span></button>
-                                <a href="signin.html" class="link-primary fw-bold text-end">還沒成為會員嗎？</a>
+                                <button class="btn btn-primary py-3 mb-3 text-white d-flex align-items-center justify-content-between pulse-animate">登入<span class="material-icons">trending_flat</span></button>
+                                <a href="signin.html" class="link-primary fw-bold text-end pulse-animate">還沒成為會員嗎？</a>
                             </div>
                         </div>
                     </div>
@@ -58,6 +59,11 @@
         </div>
     </div>
   </section>
+  <div class="slide-up position-fixed bottom-3 end-3">
+    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+      <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+    </a>
+  </div>
   <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
@@ -85,6 +91,23 @@
                 }, false)
             })
         })()
+
+        $('.btn-up').click(function (e) { 
+        e.preventDefault();
+        
+        $('html,body').animate({
+            scrollTop:0},100);
+        });
+
+        $('.slide-up').hide();
+        $(window).scroll(function(){
+            if($(window).scrollTop()>200){
+                $('.slide-up').fadeIn();
+            }
+            else{
+                $('.slide-up').fadeOut();
+            }
+        });
     </script>
 </body>
 

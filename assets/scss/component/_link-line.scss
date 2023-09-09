@@ -1,0 +1,28 @@
+@keyframes leftLine{
+    0%{left:-40%; top:75%}
+    100%{left:-50%; top:75%}
+}
+
+.link-line{
+    position: relative;
+    transition: all 3s;
+    &:hover{
+        &::before{
+            position: absolute;
+            content: "";
+            width: 40%;
+            height: 1px;
+            background-color: #AA7C09;
+            animation-name: leftLine;
+            animation-duration: 1s;
+            animation-fill-mode:both; 
+        }
+    }
+}
+
+.underline-link{
+    color: #ffffff;
+    &:hover{
+        color:#AA7C09;
+    }
+}

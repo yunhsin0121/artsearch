@@ -15,4 +15,12 @@ $(document).ready(function () {
         $(this).addClass('up-hover');
     }
     );
+    $('.pulse-animate').hover(function () {
+        // over
+        
+        $(this).addClass('animate__animated animate__pulse');
+    }, function () {
+        // out
+        $(this).removeClass('animate__animated animate__pulse');
+    });
 });

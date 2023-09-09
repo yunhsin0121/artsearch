@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
     <title>ART SEARCH</title>
   </head>
@@ -44,7 +45,7 @@
               </select>
             </div>
             <div class="col-12 col-md-3">
-              <button type="submit" class="btn btn-primary text-white fs-7 fw-bold w-100 py-5 px-md-7 d-flex justify-content-between align-items-center">搜尋<span class="material-icons">search</span></button>
+              <button type="submit" class="btn btn-primary text-white fs-7 fw-bold w-100 py-5 px-md-7 d-flex justify-content-between align-items-center pulse-animate">搜尋<span class="material-icons">search</span></button>
             </div>
           </div>
         </form>
@@ -59,7 +60,7 @@
           </div>
         </div>
         <div class="col-3 d-none d-md-block" data-aos="fade-up">
-          <a href="#" class="btn btn-dark fw-bold d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
+          <a href="artist.html" class="btn btn-dark fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 pulse-animate">View All<span class="material-icons">trending_flat</span></a>
         </div>
       </div>
       <ul class="row flex-wrap list-unstyled">
@@ -113,7 +114,7 @@
         </li>
       </ul>
       <div class="col-12 d-md-none mt-3 mb-2" data-aos="fade-up">
-        <a href="#" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7">View All<span class="material-icons">trending_flat</span></a>
+        <a href="artist.html" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7 pulse-animate">View All<span class="material-icons">trending_flat</span></a>
       </div>
     </section>
     <section class="pt-9 pt-md-11 pt-lg-16 pb-11 bg-size-cover bg-position-end" style="background-image: url(../assets/images/bg.png);" data-aos="fade-up">
@@ -126,15 +127,15 @@
             </div>
           </div>
         </div>
-        <div class="swiper-father px-10 position-relative">
+        <div class="swiper-father position-relative">
           <div class="swiper-container">
             <div class="swiper mainSwiper">
               <div class="swiper-wrapper d-flex align-items-center">
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="../assets/images/戴珍珠耳環.png" alt="戴珍珠耳環-image">
-                    <div class="card-body">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-70 translate-middle-y z-5">Jan Vermeer</span>
+                    <img src="../assets/images/戴珍珠耳環.png" class="shadow" alt="戴珍珠耳環-image">
+                    <div class="card-body p-2">
                       <h3 class="fs-5">戴珍珠耳環的少女</h3>
                       <h4 class="fs-7">揚·維梅爾</h4>
                       <p class="mb-2">維梅爾最為著名的畫作，是想像中的人物畫作，一位穿著異國服飾的女孩、頭戴東方頭巾，耳環則鑲有大到不真實的珍珠。</p>
@@ -145,9 +146,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="../assets/images/雅典學院.png" alt="雅典學院-image">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-70 translate-middle-y z-5">Raffaello Santi</span>
+                    <img src="../assets/images/雅典學院.png" class="shadow " alt="雅典學院-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">雅典學院</h3>
                       <h4 class="fs-7">拉斐爾</h4>
@@ -159,9 +160,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="../assets/images/盲人.png" alt="盲人-image">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Gustav Klimt</span>
+                    <img src="../assets/images/盲人.png" class="shadow" alt="盲人-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">盲人</h3>
                       <h4 class="fs-7">古斯塔夫·克里姆</h4>
@@ -173,9 +174,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="../assets/images/窗簾與水壺.png" alt="窗簾與水壺-image">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-70 translate-middle-y z-5">Paul Cézanne</span>
+                    <img src="../assets/images/窗簾與水壺.png" class="shadow" alt="窗簾與水壺-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">窗簾與水壺</h3>
                       <h4 class="fs-7">保羅·塞尚</h4>
@@ -187,9 +188,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="../assets/images/吶喊.jpg" alt="吶喊-image">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Edvard Munch</span>
+                    <img src="../assets/images/吶喊.jpg" class="shadow" alt="吶喊-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">吶喊</h3>
                       <h4 class="fs-7">愛德華·孟克</h4>
@@ -201,9 +202,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide bg-transparent text-light">
-                  <div class="card bg-transparent text-light">
-                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="../assets/images/artist-info/星夜.jpg" alt="星夜-image">
+                  <div class="card bg-transparent text-light pulse-animate">
+                    <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Vincent van Gogh</span>
+                    <img src="../assets/images/artist-info/星夜.jpg" class="shadow" alt="星夜-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">星夜</h3>
                       <h4 class="fs-7">文森梵谷</h4>
@@ -218,12 +219,10 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
-          <div class="swiper-button-next text-primary"></div>
-          <div class="swiper-button-prev text-primary"></div>
         </div>
         <div class="row justify-content-end mb-n13" >
           <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
-            <a href="#" class="btn btn-light fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 shadow">View All<span class="material-icons">trending_flat</span></a>
+            <a href="#" class="btn btn-light fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 shadow pulse-animate">View All<span class="material-icons">trending_flat</span></a>
           </div>
         </div>
       </div>
@@ -254,6 +253,11 @@
         </div>
       </div>
     </section>
+    <div class="slide-up position-fixed bottom-3 end-3">
+      <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+        <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+      </a>
+    </div>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
@@ -261,11 +265,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       $(document).ready(function () {
-      $(".like").click(function (e) { 
-          e.preventDefault();
-          $(this).toggleClass('fa-regular fa-heart');
-          $(this).toggleClass('fa-solid fa-heart');
-      });
       $('.up-hover').hover(function () {
           // over
           // e.preventDefault();
@@ -277,6 +276,23 @@
           $(this).addClass('up-hover');
       }
       );
+
+      $('.btn-up').click(function (e) { 
+          e.preventDefault();
+          
+          $('html,body').animate({
+              scrollTop:0},100);
+      });
+
+      $('.slide-up').hide();
+      $(window).scroll(function(){
+          if($(window).scrollTop()>200){
+              $('.slide-up').fadeIn();
+          }
+          else{
+              $('.slide-up').fadeOut();
+          }
+      });
   });
     </script>
   </body>

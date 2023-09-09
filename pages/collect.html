@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+  <title>我的收藏－ART SEARCH</title>
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+
+  <section class="container pt-4 pb-9 pb-lg-14">
+    <div class="row justify-content-between align-items-center mb-8 mb-md-9" data-aos="fade-up">
+        <div class="col">
+            <h2 class="fw-bolder ms-7 ms-md-0 ">我的收藏.</h2>
+            <div class="d-flex flex-column flex-lg-row  align-items-lg-center">
+              <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0  deco-dark-line">My Collection</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="fw-bold text-gray-dark text-end s-8 fs-md-7 mb-5">王小明 ， 您好！</p>
+          <div class=" d-flex flex-md-column justify-content-center align-items-md-end">
+            <a href="collect.html" class="btn btn-dark py-2 mb-md-5 me-3 me-md-0 text-white d-flex align-items-center justify-content-between pulse-animate">我的收藏<span class="material-icons fs-5 ms-3 ms-md-5">favorite</span></a>
+          <a href="modify.html" class="btn btn-dark py-2 text-white d-flex align-items-center justify-content-between pulse-animate">修改會員資料<span class="material-icons fs-5 ms-3 ms-md-5">edit</span></a>
+          </div>
+        </div>
+        <!-- <div class="col d-flex flex-column align-items-end">
+          <p class="fw-bold text-gray-dark fs-8 fs-md- mb-3">王小明 ， 您好！</p>
+          <a href="#" class="btn btn-dark py-2 mb-3 text-white d-flex align-items-center justify-content-between pulse-animate">我的收藏<span class="material-icons fs-5 ms-3 ms-md-5">favorite</span></a>
+          <a href="modify.html" class="btn btn-dark py-2 mb-3 text-white d-flex align-items-center justify-content-between pulse-animate">修改會員資料<span class="material-icons fs-5 ms-3 ms-md-5">edit</span></a>
+        </div> -->
+        <!-- <div class="col d-flex flex-column align-items-end">
+        <a href="#" class="link-primary link-line text-end fs-9 fs-md-7 mb-5 pulse-animate active">我的收藏<br><span class="fs-9">My Collection</span></a>
+        <a href="modify.html" class="link-primary link-line text-end fs-9 fs-md-7 mb-3 mb-md-5 pulse-animate">修改會員資料<br><span class="fs-9">Modify information</span></a>
+        <p class="fw-bold text-primary-light fs-8 fs-md-6">王小明 ， 您好！</p>
+        </div> -->
+    </div>
+    <div class="d-flex justify-content-center mb-8">
+      <button type="button" class="all-btn btn btn-primary text-white px-6 px-md-7 me-7 pulse-animate">全部</button>
+      <button type="button" class="artist-btn btn btn-primary text-white px-6 px-md-7 me-7 pulse-animate">藝術家</button>
+      <button type="button" class="artworks-btn btn btn-primary text-white px-6 px-md-7 pulse-animate">藝術作品</button>
+    </div>
+    <ul class="row flex-wrap list-unstyled align-items-center">
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artist">
+        <div class="card position-relative">
+         <a href=".like" class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+         <img src="../assets/images/文森.png" class="card-img" alt="文森-image">
+         <a href="artist-info.html" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+           <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">文森·梵谷</a>
+         </a>
+        </div>
+       </li>
+       <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artworks">
+        <div class="card position-relative">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <img src="../assets/images/阿讓特伊的雪.jpg" class="card-img" alt="阿讓特伊的雪-image">
+          <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+            <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">阿讓特伊的雪</a>
+          </a>
+        </div> 
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artist">
+       <div class="card position-relative">
+        <a href="#"
+           class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+        <img src="../assets/images/artist/班傑明·韋斯特.png" class="card-img" alt="韋斯特-image">
+        <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+          <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">班傑明·韋斯特</a>
+        </a>
+       </div>
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artworks">
+        <div class="card position-relative">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <img src="../assets/images/artist-info/鳶尾花.jpg" class="card-img" alt="鳶尾花-image">
+          <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+            <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">鳶尾花</a>
+          </a>
+        </div>  
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artist">
+        <div class="card position-relative">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <img src="../assets/images/artist/李奧納多·達文西.png" class="card-img" alt="達文西-image">
+          <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+            <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">李奧納多·達文西</a>
+          </a>
+        </div> 
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artworks">
+        <div class="card position-relative">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <img src="../assets/images/印象日出.jpg" class="card-img" alt="印象·日出-image">
+          <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+            <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">印象·日出</a>
+          </a>
+        </div>  
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artist">
+        <div class="card position-relative">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <img src="../assets/images/洛德.png" class="card-img" alt="洛德-image">
+          <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+            <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">洛德·莫內家</a>
+          </a>
+        </div>
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artworks">
+        <div class="card position-relative">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <img src="../assets/images/蒙娜麗莎.jpg" class="card-img" alt="蒙娜麗莎-image">
+          <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+            <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">蒙娜麗莎</a>
+          </a>
+        </div>  
+      </li>
+      
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artist">
+        <div class="card position-relative">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <img src="../assets/images/artist/彼得·保羅·魯本斯.png" class="card-img" alt="魯本斯-image">
+          <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+            <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">彼得·保羅·魯本斯</a>
+          </a>
+        </div>  
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artworks">
+        <div class="card position-relative">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <img src="../assets/images/戴珍珠耳環.png" class="card-img" alt="戴珍珠耳環的少女-image">
+          <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+            <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">戴珍珠耳環的少女</a>
+          </a>
+        </div>  
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12 artist">
+        <div class="card position-relative">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <img src="../assets/images/artist/奧諾雷·杜米埃.png" class="card-img" alt="杜米埃-image">
+          <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+            <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">米奧諾雷·杜米埃</a>
+          </a>
+        </div>  
+      </li>
+   </ul>
+    <!-- <ul class="row flex-wrap list-unstyled" >
+      <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-9" data-aos="fade-up">
+        <div class="card position-relative">
+          <img src="../assets/images/文森.png" class="card-img" alt="文森-image">
+          <a href="#" class="like fa-solid fa-heart fs-4 me-3 text-secondary position-absolute top-3 start-3 z-3" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+          <a href="artist-info.html" class=" w-100 fs-8 fs-md-5 text-center up-hover">文森·梵谷</a>
+        </div>
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+        <div class="card position-relative">
+          <img src="../assets/images/artist/班傑明·韋斯特.png" class="card-img" alt="韋斯特-image">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">班傑明·韋斯特</a>
+        </div>
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+        <div class="card position-relative">
+          <img src="../assets/images/洛德.png" class="card-img" alt="洛德-image">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">洛德·莫內家</a>
+        </div>
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+        <div class="card position-relative">
+          <img src="../assets/images/artist/李奧納多·達文西.png" class="card-img" alt="達文西-image">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">李奧納多·達文西</a>
+        </div>
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+        <div class="card position-relative">
+          <img src="../assets/images/artist/彼得·保羅·魯本斯.png" class="card-img" alt="魯本斯-image">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">彼得·保羅·魯本斯</a>
+        </div>
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+        <div class="card position-relative">
+          <img src="../assets/images/保羅塞尚.png" class="card-img" alt="保羅塞尚-image">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">保羅·塞尚</a>
+        </div>
+      </li>
+      <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+        <div class="card position-relative">
+          <img src="../assets/images/artist/奧諾雷·杜米埃.png" class="card-img" alt="杜米埃-image">
+          <a href="#"
+            class="like fa-solid fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3"></a>
+          <a href="#" class="w-100 fs-8 fs-md-5 text-center up-hover">米奧諾雷·杜米埃</a>
+        </div>
+      </li>
+    </ul> -->
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5 fw-bold" id="exampleModalLabel">取消收藏</h3>
+          <button type="button" class="btn-close pulse-animate" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+                <img src="../assets/images/文森.png" class="card-img" alt="保羅塞尚-image">
+            </div>
+            <div class="col p-0 p-lg-5 d-flex flex-column justify-content-between">
+                <p class="text-gray-light text-center my-auto">確定將<span class="text-primary fw-bold">文森·梵谷</span>從我的收藏移除嗎？</p>
+                <div class="d-flex align-self-end">
+                    <button type="button" id="delete" class="btn btn-primary text-white fs-9 px-5 px-lg-7 me-1 me-lg-5 pulse-animate" data-bs-dismiss="modal">確定</button>
+                    <!-- <button type="button" class="btn btn-secondary text-white fs-9 px-5 px-lg-7 pulse-animate">取消</button> -->
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-up position-fixed bottom-3 end-3">
+    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+      <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+    </a>
+  </div>
+
+
+  <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+     //取消收藏按鈕
+    $("[href='.like']").click(function (e) { 
+        e.preventDefault();
+        $("#delete").click(function (e) { 
+          e.preventDefault();
+          $("[href='.like']").parent().parent().remove();
+          $("[href='.like']").toggleClass('fa-regular fa-heart');
+      });
+    });
+
+    // 往上滑特效
+    $('.up-hover').hover(function () {
+        $(this).removeClass('up-hover');
+        $(this).addClass('up-hover-after');
+    }, function () {
+        $(this).removeClass('up-hover-after');
+        $(this).addClass('up-hover');
+    });
+
+    //點擊按鈕特效
+    $('.pulse-animate').hover(function () {
+        $(this).addClass('animate__animated animate__pulse');
+    }, function () {
+        $(this).removeClass('animate__animated animate__pulse');
+    });
+
+    //切換類別按鈕
+    $(".artist-btn").on("click", function(){
+        $('.artworks').hide();
+          $(".artworks-btn").on("click", function(){
+            $('.artworks').show();
+            $('.artist').hide();
+          })
+    })
+
+    $(".artworks-btn").on("click", function(){
+        $('.artist').hide();
+        $(".artist-btn").on("click", function(){
+        $('.artist').show();
+      })
+    })
+
+    $(".all-btn").on("click", function(){
+      $('.artist').show();
+      $('.artworks').show();
+    })
+    // 往上滑按鈕
+    $('.btn-up').click(function (e) { 
+        e.preventDefault();
+        
+        $('html,body').animate({
+            scrollTop:0},100);
+        });
+
+        $('.slide-up').hide();
+        $(window).scroll(function(){
+            if($(window).scrollTop()>200){
+                $('.slide-up').fadeIn();
+            }
+            else{
+                $('.slide-up').fadeOut();
+            }
+        });
+});
+  </script>
+</body>
+
+</html>
