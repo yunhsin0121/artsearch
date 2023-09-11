@@ -13,6 +13,7 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <!-- banner -->
     <section class="container mb-md-12 mb-lg-16">
       <div class="card rounded-0 border-0">
         <img src="../assets/images/art-gallery.jpg" class="card-img rounded-0" alt="art-gallery-image">
@@ -28,6 +29,7 @@
         </div>
       </div>
     </section>
+    <!-- searching -->
     <section class="bg-primary-light" data-aos="fade-up">
       <div class="container py-8 py-md-10 py-lg-15 px-7 px-md-0 position-relative">
         <h2 class="text-primary fs-1 opacity-20 position-absolute top-0 start-md-35 start-lg-30 start-xl-25 start-xxl-20  translate-middle d-none d-md-block">Searching</h2>
@@ -51,6 +53,7 @@
         </form>
       </div>
     </section>
+    <!--熱門藝術家  -->
     <section class="container py-11 py-lg-14">
       <div class="row justify-content-between mb-8 mb-md-10">
         <div class="col-md-8 col-lg-5 px-0 px-md-2" data-aos="fade-up">
@@ -117,6 +120,7 @@
         <a href="artist.html" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7 pulse-animate">View All<span class="material-icons">trending_flat</span></a>
       </div>
     </section>
+    <!--熱門作品  -->
     <section class="pt-9 pt-md-11 pt-lg-16 pb-11 bg-size-cover bg-position-end" style="background-image: url(../assets/images/bg.png);" data-aos="fade-up">
       <div class="container-fluid px-sm-12 px-lg-14">
         <div class="row justify-content-between mb-8 mb-md-10 text-white">
@@ -127,14 +131,14 @@
             </div>
           </div>
         </div>
-        <div class="swiper-father position-relative">
+        <div class="swiper-father px-10 position-relative">
           <div class="swiper-container">
             <div class="swiper mainSwiper">
               <div class="swiper-wrapper d-flex align-items-center">
                 <div class="swiper-slide bg-transparent text-light">
                   <div class="card bg-transparent text-light pulse-animate">
                     <span class="text-light fs-6 position-absolute top-10 start-70 translate-middle-y z-5">Jan Vermeer</span>
-                    <img src="../assets/images/戴珍珠耳環.png" class="shadow" alt="戴珍珠耳環-image">
+                    <img src="../assets/images/artworks/戴珍珠耳環.png" class="shadow" alt="戴珍珠耳環-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">戴珍珠耳環的少女</h3>
                       <h4 class="fs-7">揚·維梅爾</h4>
@@ -148,7 +152,7 @@
                 <div class="swiper-slide bg-transparent text-light">
                   <div class="card bg-transparent text-light pulse-animate">
                     <span class="text-light fs-6 position-absolute top-10 start-70 translate-middle-y z-5">Raffaello Santi</span>
-                    <img src="../assets/images/雅典學院.png" class="shadow " alt="雅典學院-image">
+                    <img src="../assets/images/artworks/雅典學院.png" class="shadow " alt="雅典學院-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">雅典學院</h3>
                       <h4 class="fs-7">拉斐爾</h4>
@@ -162,7 +166,7 @@
                 <div class="swiper-slide bg-transparent text-light">
                   <div class="card bg-transparent text-light pulse-animate">
                     <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Gustav Klimt</span>
-                    <img src="../assets/images/盲人.png" class="shadow" alt="盲人-image">
+                    <img src="../assets/images/artworks/盲人.png" class="shadow" alt="盲人-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">盲人</h3>
                       <h4 class="fs-7">古斯塔夫·克里姆</h4>
@@ -176,7 +180,7 @@
                 <div class="swiper-slide bg-transparent text-light">
                   <div class="card bg-transparent text-light pulse-animate">
                     <span class="text-light fs-6 position-absolute top-10 start-70 translate-middle-y z-5">Paul Cézanne</span>
-                    <img src="../assets/images/窗簾與水壺.png" class="shadow" alt="窗簾與水壺-image">
+                    <img src="../assets/images/artworks/窗簾與水壺.png" class="shadow" alt="窗簾與水壺-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">窗簾與水壺</h3>
                       <h4 class="fs-7">保羅·塞尚</h4>
@@ -190,7 +194,7 @@
                 <div class="swiper-slide bg-transparent text-light">
                   <div class="card bg-transparent text-light pulse-animate">
                     <span class="text-light fs-6 position-absolute top-10 start-80 translate-middle-y z-5">Edvard Munch</span>
-                    <img src="../assets/images/吶喊.jpg" class="shadow" alt="吶喊-image">
+                    <img src="../assets/images/artworks/吶喊.jpg" class="shadow" alt="吶喊-image">
                     <div class="card-body p-2">
                       <h3 class="fs-5">吶喊</h3>
                       <h4 class="fs-7">愛德華·孟克</h4>
@@ -219,14 +223,17 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
+          <div class="swiper-button-next text-primary pulse-animate"></div>
+          <div class="swiper-button-prev text-primary pulse-animate"></div>
         </div>
         <div class="row justify-content-end mb-n13" >
           <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
-            <a href="#" class="btn btn-light fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 shadow pulse-animate">View All<span class="material-icons">trending_flat</span></a>
+            <a href="artworks.html" class="btn btn-light fw-bold d-flex justify-content-between align-items-center py-5 px-md-7 shadow pulse-animate">View All<span class="material-icons">trending_flat</span></a>
           </div>
         </div>
       </div>
     </section>
+    <!--藝術家檢索平台簡介 -->
     <section class="container pt-13 pb-9 py-md-11 py-lg-14" data-aos="fade-up">
       <div class="row justify-content-between">
         <div class="col-lg-5 d-none d-lg-block" data-aos="fade-up">
@@ -253,8 +260,9 @@
         </div>
       </div>
     </section>
+    <!-- 置頂按鈕 -->
     <div class="slide-up position-fixed bottom-3 end-3">
-      <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+      <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center pulse-animate" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
         <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
       </a>
     </div>
@@ -265,25 +273,21 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       $(document).ready(function () {
+        // 上滑特效
       $('.up-hover').hover(function () {
-          // over
-          // e.preventDefault();
           $(this).removeClass('up-hover');
           $(this).addClass('up-hover-after');
       }, function () {
-          // out
           $(this).removeClass('up-hover-after');
           $(this).addClass('up-hover');
       }
       );
-
+       // 上滑按鈕
       $('.btn-up').click(function (e) { 
           e.preventDefault();
-          
           $('html,body').animate({
               scrollTop:0},100);
       });
-
       $('.slide-up').hide();
       $(window).scroll(function(){
           if($(window).scrollTop()>200){

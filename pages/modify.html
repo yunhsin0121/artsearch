@@ -16,7 +16,7 @@
 
 <body>
   <%- include('./layout/header'); -%>
-
+<!--修改會員資料  -->
   <section class="py-4 pb-md-11 mb-7 mb-md-9 bg-size-contain bg-position-center"
     style="background: url(../assets/images/logo-light.png) no-repeat;">
     <div class="container">
@@ -86,12 +86,12 @@
     </div>
     </div>
   </section>
+  <!--置頂按鈕 -->
   <div class="slide-up position-fixed bottom-3 end-3">
-    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center pulse-animate" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
       <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
     </a>
   </div>
-
   <%- include('./layout/footer'); -%>
 
   <script type="module" src="../main.js"></script>
@@ -105,63 +105,36 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
     crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function () {
-      // 往上滑按鈕
-      $('.up-hover').hover(function () {
-          $(this).removeClass('up-hover');
-          $(this).addClass('up-hover-after');
-      }, function () {
-          $(this).removeClass('up-hover-after');
-          $(this).addClass('up-hover');
-      });
-  
-      //點擊按鈕特效
-      $('.pulse-animate').hover(function () {
-          $(this).addClass('animate__animated animate__pulse');
-      }, function () {
-          $(this).removeClass('animate__animated animate__pulse');
-      });
-  
-  });
-    </script>
   <script>
+    // 登入驗證
     (() => {
       'use strict'
-
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
       const forms = document.querySelectorAll('.needs-validation')
-
-      // Loop over them and prevent submission
       Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
           if (!form.checkValidity()) {
             event.preventDefault()
             event.stopPropagation()
           }
-
           form.classList.add('was-validated')
         }, false)
       })
     })()
-
      // 往上滑按鈕
-     $('.btn-up').click(function (e) { 
+      $('.btn-up').click(function (e) { 
         e.preventDefault();
-        
         $('html,body').animate({
             scrollTop:0},100);
-        });
-
-        $('.slide-up').hide();
-        $(window).scroll(function(){
-            if($(window).scrollTop()>200){
-                $('.slide-up').fadeIn();
-            }
-            else{
-                $('.slide-up').fadeOut();
-            }
-        });
+      });
+      $('.slide-up').hide();
+      $(window).scroll(function(){
+          if($(window).scrollTop()>200){
+              $('.slide-up').fadeIn();
+          }
+          else{
+              $('.slide-up').fadeOut();
+          }
+      });
   </script>
 </body>
 

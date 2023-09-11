@@ -13,14 +13,14 @@
   <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
   <title>作品介紹－ART SEARCH</title>
 </head>
-
 <body>
   <%- include('./layout/header'); -%>
+  <!--星夜  -->
   <section>
     <div class="container py-4 pb-md-5">
       <div class="d-flex justify-content-center mb-md-9">
         <h2 class="fs-2 fw-bolder ms-7 ms-md-0 me-3 text-primary mb-4">星夜</h2>
-        <a href="#" class="like fa-regular fa-heart fs-2 mb-0 text-primary"></a>
+        <a href="#" class="like fa-regular fa-heart fs-2 mb-0 text-primary pulse-animate"></a>
       </div>
       <div data-aos="fade-up">
         <div class="swiper-father px-10">
@@ -41,8 +41,8 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next text-primary"></div>
-            <div class="swiper-button-prev text-primary"></div>
+            <div class="swiper-button-next text-primary pulse-animate"></div>
+            <div class="swiper-button-prev text-primary pulse-animate"></div>
           </div>
         </div>
         <div thumbsSlider="" class="swiper smallSwiper py-7" data-aos="fade-up">
@@ -64,6 +64,7 @@
     </div>
   </div>
   </section>
+  <!-- 作品簡介 -->
   <section class="container pt-4 pb-9 py-md-12">
     <div class="row justify-content-center align-items-center">
       <div class="col-12 col-md-7 col-lg-9 mb-3 mb-md-0">
@@ -87,6 +88,7 @@
         </div>
       </div>
   </section>
+  <!--其他作品  -->
   <section class="bg-primary-light bg-size-cover bg-position-end pt-9 pt-md-11 pb-11 mb-9 mb-lg-14" style="background-image: url(../assets/images/bg.png);" data-aos="fade-up">
     <div class="container">
       <div class="row mb-8 mb-md-10">
@@ -154,14 +156,15 @@
             <div class="swiper-pagination"></div>
           </div>
           </div>
-          <div class="swiper-button-next text-primary"></div>
-          <div class="swiper-button-prev text-primary"></div>
+          <div class="swiper-button-next text-primary pulse-animate"></div>
+          <div class="swiper-button-prev text-primary pulse-animate"></div>
         </div>
       </div>
     </div>
   </section>
+  <!--置頂按鈕 -->
   <div class="slide-up position-fixed bottom-3 end-3">
-    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center pulse-animate" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
       <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
     </a>
   </div>
@@ -173,40 +176,38 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
     $(document).ready(function () {
-  $(".like").click(function (e) { 
-      e.preventDefault();
-      $(this).toggleClass('fa-regular fa-heart');
-      $(this).toggleClass('fa-solid fa-heart');
-  });
-  $('.up-hover').hover(function () {
-      // over
-      // e.preventDefault();
-      $(this).removeClass('up-hover');
-      $(this).addClass('up-hover-after');
-  }, function () {
-      // out
-      $(this).removeClass('up-hover-after');
-      $(this).addClass('up-hover');
-  }
-  );
-
-  $('.btn-up').click(function (e) { 
+      // 收藏按鈕
+      $(".like").click(function (e) { 
         e.preventDefault();
-        
-        $('html,body').animate({
-            scrollTop:0},100);
+        $(this).toggleClass('fa-regular fa-heart');
+        $(this).toggleClass('fa-solid fa-heart');
+      });
+         // 上滑特效
+      $('.up-hover').hover(function () {
+          $(this).removeClass('up-hover');
+          $(this).addClass('up-hover-after');
+      }, function () {
+          $(this).removeClass('up-hover-after');
+          $(this).addClass('up-hover');
+      }
+      );
+      // 上滑按鈕
+      $('.btn-up').click(function (e) { 
+          e.preventDefault();
+          
+          $('html,body').animate({
+              scrollTop:0},100);
+      });
+      $('.slide-up').hide();
+      $(window).scroll(function(){
+          if($(window).scrollTop()>200){
+              $('.slide-up').fadeIn();
+          }
+          else{
+              $('.slide-up').fadeOut();
+          }
+      });
     });
-
-    $('.slide-up').hide();
-    $(window).scroll(function(){
-        if($(window).scrollTop()>200){
-            $('.slide-up').fadeIn();
-        }
-        else{
-            $('.slide-up').fadeOut();
-        }
-    });
-});
   </script>
 </body>
 

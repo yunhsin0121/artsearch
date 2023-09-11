@@ -10,14 +10,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
-    <title>文森·梵谷－ART SEARCH</title>
+    <title>文森·梵谷-ART SEARCH</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <!--文森·梵谷  -->
     <section class="container py-4 pb-md-11">
       <div class="d-flex justify-content-center mb-3 mb-md-9">
         <h2 class="fs-2 fw-bolder ms-7 ms-md-0 me-3 text-primary mb-4">文森·梵谷</h2>
-        <a href="#" class="like fa-regular fa-heart fs-2 mb-0 text-primary"></a>
+        <a href="#" class="like fa-regular fa-heart fs-2 mb-0 text-primary pulse-animate"></a>
       </div>
       <div class="row mb-8 mb-md-10">
         <div class="col-md-10 col-lg-8" data-aos="fade-up">
@@ -51,6 +52,7 @@
         </div>
       </div>
     </section>
+    <!--作品選集  -->
     <section class="bg-primary-light bg-size-cover bg-position-end pt-9 pt-md-11 pb-11 mb-9 mb-lg-14" style="background-image: url(../assets/images/bg-dark.png);" data-aos="fade-up">
       <div class="container">
         <div class="row mb-8 mb-md-10">
@@ -74,7 +76,7 @@
                   </div>
                   <div class="swiper-slide">
                     <img src="../assets/images/artist-info/星夜.jpg" class="shadow" alt="星夜-image">
-                    <a href="art-works.html" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+                    <a href="art-works-info.html" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
                       <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">星夜</a>
                     </a>
                   </div>
@@ -106,14 +108,15 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="swiper-button-next text-primary"></div>
-            <div class="swiper-button-prev text-primary"></div>
+            <div class="swiper-button-next text-primary pulse-animate"></div>
+            <div class="swiper-button-prev text-primary pulse-animate"></div>
           </div>
         </div>
       </div>
     </section>
+    <!--置頂按鈕 -->
     <div class="slide-up position-fixed bottom-3 end-3">
-      <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+      <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center pulse-animate" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
         <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
       </a>
     </div>
@@ -125,40 +128,41 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       $(document).ready(function () {
-    $(".like").click(function (e) { 
-        e.preventDefault();
-        $(this).toggleClass('fa-regular fa-heart');
-        $(this).toggleClass('fa-solid fa-heart');
-    });
-    $('.up-hover').hover(function () {
-        // over
-        // e.preventDefault();
-        $(this).removeClass('up-hover');
-        $(this).addClass('up-hover-after');
-    }, function () {
-        // out
-        $(this).removeClass('up-hover-after');
-        $(this).addClass('up-hover');
-    }
-    );
-
-    $('.btn-up').click(function (e) { 
-        e.preventDefault();
-        
-        $('html,body').animate({
-            scrollTop:0},100);
-    });
-
-    $('.slide-up').hide();
-    $(window).scroll(function(){
-        if($(window).scrollTop()>200){
-            $('.slide-up').fadeIn();
+         // 收藏按鈕
+        $(".like").click(function (e) { 
+            e.preventDefault();
+            $(this).toggleClass('fa-regular fa-heart');
+            $(this).toggleClass('fa-solid fa-heart');
+        });
+         // 上滑特效
+        $('.up-hover').hover(function () {
+            // over
+            // e.preventDefault();
+            $(this).removeClass('up-hover');
+            $(this).addClass('up-hover-after');
+        }, function () {
+            // out
+            $(this).removeClass('up-hover-after');
+            $(this).addClass('up-hover');
         }
-        else{
-            $('.slide-up').fadeOut();
-        }
-    });
-});
+        );
+        // 上滑按鈕
+        $('.btn-up').click(function (e) { 
+            e.preventDefault();
+            
+            $('html,body').animate({
+                scrollTop:0},100);
+        });
+        $('.slide-up').hide();
+        $(window).scroll(function(){
+            if($(window).scrollTop()>200){
+                $('.slide-up').fadeIn();
+            }
+            else{
+                $('.slide-up').fadeOut();
+            }
+        });
+      });
     </script>
   </body>
 </html>

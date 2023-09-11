@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+  <title>藝術作品-ART SEARCH</title>
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+    <!-- 藝術作品 -->
+    <section class="container pt-4 pb-9 pb-lg-14">
+      <div class="row justify-content-lg-center mb-8 mb-md-12" data-aos="fade-up">
+          <h2 class="fw-bolder ms-7 ms-md-0 text-lg-center">藝術作品.</h2>
+          <div class="d-flex flex-column flex-lg-row justify-content-lg-center align-items-lg-center">
+            <p class="fs-8 fs-md-4 mb-4 mb-md-0 ms-7 ms-md-0 text-lg-center deco-dark-line">Artworks</p>
+          </div>
+      </div>
+      <div class="d-flex justify-content-center mb-8">
+          <button type="button" class="btn btn-primary text-white px-6 px-md-7 me-7 pulse-animate">A - Z</button>
+          <button type="button" class="btn btn-primary text-white px-6 px-md-7 me-7 pulse-animate">年代</button>
+          <button type="button" class="btn btn-primary text-white px-6 px-md-7 pulse-animate">風格</button>
+      </div>
+      <ul class="row flex-wrap list-unstyled">
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artist-info/星夜.jpg" class="card-img" alt="星夜-image">
+            <a href="art-works-info.html" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">星夜</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artworks/阿讓特伊的雪.jpg" class="card-img" alt="阿讓特伊的雪-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">阿讓特伊的雪</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artworks/印象日出.jpg" class="card-img" alt="印象日出-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">印象日出</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artworks/草地上的午餐.jpg" class="card-img" alt="草地上的午餐-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">草地上的午餐</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artworks/蒙娜麗莎.jpg" class="card-img" alt="蒙娜麗莎-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">蒙娜麗莎</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artworks/藍面紗的女孩.jpg" class="card-img" alt="藍面紗的女孩-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">藍面紗的女孩</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artworks/侍女.jpg" class="card-img" alt="侍女-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">侍女</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artworks/倒牛奶的女僕.jpg" class="card-img" alt="倒牛奶的女僕-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">倒牛奶的女僕</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artist-info/向日葵.jpg" class="card-img" alt="向日葵-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">向日葵</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artworks/戴珍珠耳環.png" class="card-img" alt="戴珍珠耳環的少女-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">戴珍珠耳環的少女</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artworks/盲人.png" class="card-img" alt="盲人-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">盲人</a>
+            </a>
+          </div> 
+        </li>
+        <li class="col-6 col-md-4 col-lg-3 mb-8 mb-md-12" data-aos="fade-up">
+          <div class="card position-relative">
+            <a href="#"
+              class="like fa-regular fa-heart fs-5 me-3 text-secondary position-absolute top-3 start-3 z-3 pulse-animate"></a>
+            <img src="../assets/images/artworks/吶喊.jpg" class="card-img" alt="吶喊-image">
+            <a href="#" class="d-flex justify-content-center align-items-center w-100 h-100 deco-bg position-absolute top-50 start-50 translate-middle">
+              <span class="fw-bold fs-md-6 fs-4 h-100 w-100 d-flex justify-content-center align-items-center">吶喊</a>
+            </a>
+          </div> 
+        </li>
+      </ul>
+      <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link active" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!--置頂按鈕 -->
+    <div class="slide-up position-fixed bottom-3 end-3">
+      <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center pulse-animate" style="background: url(../assets/images/circle.png) no-repeat; width: 50px; height: 50px;">
+        <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+      </a>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // 收藏按鈕
+        $(".like").click(function (e) { 
+          e.preventDefault();
+          $(this).toggleClass('fa-regular fa-heart');
+          $(this).toggleClass('fa-solid fa-heart');
+        });
+        // 上滑特效
+        $('.up-hover').hover(function () {
+            $(this).removeClass('up-hover');
+            $(this).addClass('up-hover-after');
+        }, function () {
+            $(this).removeClass('up-hover-after');
+            $(this).addClass('up-hover');
+        }
+        );
+        // 上滑按鈕
+        $('.btn-up').click(function (e) { 
+            e.preventDefault();
+            
+            $('html,body').animate({
+                scrollTop:0},100);
+        });
+        $('.slide-up').hide();
+        $(window).scroll(function(){
+            if($(window).scrollTop()>200){
+                $('.slide-up').fadeIn();
+            }
+            else{
+                $('.slide-up').fadeOut();
+            }
+        });
+      });
+    </script>
+</html>
