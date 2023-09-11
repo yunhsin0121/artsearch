@@ -8,7 +8,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="icon" type="image/x-icon" href="/artsearch/assets/logo-ecb39e98.png">
-  <title>展覽資訊－ART SEARCH</title>
+  <title>展覽資訊-ART SEARCH</title>
   <script type="module" crossorigin src="/artsearch/assets/main-72eab2eb.js"></script>
   <link rel="stylesheet" href="/artsearch/assets/main-33b8dfa3.css">
 </head>
@@ -22,10 +22,13 @@
         </a>
         <ul class="d-flex list-unstyled align-items-center mb-0">
           <li class="pulse-animate">
-            <a class="link-dark me-4 me-md-7 fw-bold" href="info.html">展覽資訊</a>
+            <a class="link-dark fw-bold me-4 me-md-7" href="info.html">展覽資訊</a>
           </li>
           <li class="pulse-animate">
-            <a class="link-dark fw-bold" href="artist.html">藝術家</a>
+            <a class="link-dark fw-bold me-4 me-md-7" href="artist.html">藝術家</a>
+          </li>
+          <li class="pulse-animate">
+            <a class="link-dark fw-bold" href="artworks.html">藝術作品</a>
           </li>
         </ul>
         <div class="d-flex" role="search">
@@ -34,7 +37,8 @@
           <a href="collect.html" class="text-dark pulse-animate"><span class="material-icons fs-4 mb-0">favorite</span></a>
         </div>
       </div>
-  </nav>  <section class="container">
+  </nav>  <!-- banner -->
+  <section class="container">
     <div class="card rounded-0 border-0" data-aos="fade-up">
       <img src="/artsearch/assets/art-gallery2-a6d66f74.jpg" class="card-img rounded-0" alt="art-gallery-image">
       <div
@@ -51,6 +55,7 @@
       </div>
     </div>
   </section>
+  <!-- 展覽資訊 -->
   <section class="container py-9 py-lg-14">
     <div class="row justify-content-between mb-8 mb-md-10">
       <div class="col-md-10 col-lg-8" data-aos="fade-up">
@@ -132,8 +137,7 @@
             </div>
           </div>
         </div>
-      </div>
-      
+      </div>     
     </div>
     <nav aria-label="Page navigation">
       <ul class="pagination justify-content-end">
@@ -144,18 +148,17 @@
         <li class="page-item"><a class="page-link" href="#">Next</a></li>
       </ul>
     </nav>
-    <div class="slide-up position-fixed bottom-3 end-3">
-      <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(/artsearch/assets/circle-f8708d4b.png) no-repeat; width: 50px; height: 50px;">
-        <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
-      </a>
-    </div>
   </section>
-
-
+  <!-- 置頂按鈕-->
+  <div class="slide-up position-fixed bottom-3 end-3">
+    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center pulse-animate" style="background: url(/artsearch/assets/circle-f8708d4b.png) no-repeat; width: 50px; height: 50px;">
+      <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
+    </a>
+  </div>
   <footer class="border-top border-gray-light">
   <div class="container py-8 py-md-10 py-lg-12">
     <div class="d-flex justify-content-md-between flex-column flex-md-row">
-      <a href="index.html" class="text-gray-light fs-8 fs-md-7 mb-2 md-md-0">藝術家檢索平台</a>
+      <a href="index.html" class="text-gray-light fs-8 fs-md-7 mb-2 md-md-0 pulse-animate">藝術家檢索平台</a>
       <p class="text-gray-light mb-0">Copyright © 2023 All rights reserved.</p>
     </div>
   </div>
@@ -166,18 +169,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
     $(document).ready(function () {
-    $('.up-hover').hover(function () {
-        // over
-        // e.preventDefault();
-        $(this).removeClass('up-hover');
-        $(this).addClass('up-hover-after');
-    }, function () {
-        // out
-        $(this).removeClass('up-hover-after');
-        $(this).addClass('up-hover');
-    }
-    );
-
+    // 上滑按鈕
     $('.btn-up').click(function (e) { 
         e.preventDefault();
         

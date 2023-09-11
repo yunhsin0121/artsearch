@@ -15,7 +15,6 @@
   <script type="module" crossorigin src="/artsearch/assets/main-72eab2eb.js"></script>
   <link rel="stylesheet" href="/artsearch/assets/main-33b8dfa3.css">
 </head>
-
 <body>
   <nav class="container py-4 py-lg-7">
       <div class="d-flex align-items-center justify-content-between">
@@ -25,10 +24,13 @@
         </a>
         <ul class="d-flex list-unstyled align-items-center mb-0">
           <li class="pulse-animate">
-            <a class="link-dark me-4 me-md-7 fw-bold" href="info.html">展覽資訊</a>
+            <a class="link-dark fw-bold me-4 me-md-7" href="info.html">展覽資訊</a>
           </li>
           <li class="pulse-animate">
-            <a class="link-dark fw-bold" href="artist.html">藝術家</a>
+            <a class="link-dark fw-bold me-4 me-md-7" href="artist.html">藝術家</a>
+          </li>
+          <li class="pulse-animate">
+            <a class="link-dark fw-bold" href="artworks.html">藝術作品</a>
           </li>
         </ul>
         <div class="d-flex" role="search">
@@ -37,7 +39,7 @@
           <a href="collect.html" class="text-dark pulse-animate"><span class="material-icons fs-4 mb-0">favorite</span></a>
         </div>
       </div>
-  </nav>
+  </nav>  <!-- searching -->
   <section class="bg-secondary-light mt-8 mt-md-11">
       <div class="container py-8 py-md-10 py-lg-15 px-7 px-md-0 position-relative">
         <h2 class="text-primary fs-1 fs-md-1 opacity-50 position-absolute top-0 start-40 start-md-30 start-lg-30 start-xl-25 start-xxl-20  translate-middle ">Searching</h2>
@@ -62,6 +64,7 @@
         </form>
        </div>
   </section>
+  <!--熱門藝術家 -->
   <section class="container py-7 py-lg-14">
     <div class="row justify-content-between mb-8 mb-md-10">
       <div class="col-md-8 col-lg-5 px-0 px-md-2" data-aos="fade-up">
@@ -127,7 +130,8 @@
       <div class="col-12 d-md-none mt-3 mb-2" data-aos="fade-up">
         <a href="artist.html" class="btn btn-dark d-flex justify-content-between align-items-center py-5 px-md-7 pulse-animate">View All<span class="material-icons">trending_flat</span></a>
       </div>
-    </section>
+  </section>
+  <!--您可能會喜歡  -->
   <section class="bg-primary-light bg-size-cover bg-position-end pt-9 pt-md-11 pb-11 mb-9 mb-lg-14" style="background-image: url(/artsearch/assets/bg-d5c526b8.png);" data-aos="fade-up">
     <div class="container">
       <div class="row justify-content-between mb-8 mb-md-10">
@@ -195,21 +199,22 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
-          <div class="swiper-button-next text-primary"></div>
-          <div class="swiper-button-prev text-primary"></div>
+          <div class="swiper-button-next text-primary pulse-animate"></div>
+          <div class="swiper-button-prev text-primary pulse-animate"></div>
         </div>
       </div>
     </div>
   </section>
+  <!--置頂按鈕 -->
   <div class="slide-up position-fixed bottom-3 end-3">
-    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center" style="background: url(/artsearch/assets/circle-f8708d4b.png) no-repeat; width: 50px; height: 50px;">
+    <a href=".zip" class="btn-up bg-size-contain p-3 d-flex align-items-center justify-content-center pulse-animate" style="background: url(/artsearch/assets/circle-f8708d4b.png) no-repeat; width: 50px; height: 50px;">
       <span class="material-icons text-primary fs-3 mb-1 fw-bold d-inline-block">expand_less</span>
     </a>
   </div>
   <footer class="border-top border-gray-light">
   <div class="container py-8 py-md-10 py-lg-12">
     <div class="d-flex justify-content-md-between flex-column flex-md-row">
-      <a href="index.html" class="text-gray-light fs-8 fs-md-7 mb-2 md-md-0">藝術家檢索平台</a>
+      <a href="index.html" class="text-gray-light fs-8 fs-md-7 mb-2 md-md-0 pulse-animate">藝術家檢索平台</a>
       <p class="text-gray-light mb-0">Copyright © 2023 All rights reserved.</p>
     </div>
   </div>
@@ -220,40 +225,38 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
     $(document).ready(function () {
-    $(".like").click(function (e) { 
+      // 收藏按鈕
+      $(".like").click(function (e) { 
         e.preventDefault();
         $(this).toggleClass('fa-regular fa-heart');
         $(this).toggleClass('fa-solid fa-heart');
+      });
+      // 上滑特效
+      $('.up-hover').hover(function () {
+          $(this).removeClass('up-hover');
+          $(this).addClass('up-hover-after');
+      }, function () {
+          $(this).removeClass('up-hover-after');
+          $(this).addClass('up-hover');
+      }
+      );
+      // 上滑按鈕
+      $('.btn-up').click(function (e) { 
+          e.preventDefault();
+          
+          $('html,body').animate({
+              scrollTop:0},100);
+      });
+      $('.slide-up').hide();
+      $(window).scroll(function(){
+          if($(window).scrollTop()>200){
+              $('.slide-up').fadeIn();
+          }
+          else{
+              $('.slide-up').fadeOut();
+          }
+      });
     });
-    $('.up-hover').hover(function () {
-        // over
-        // e.preventDefault();
-        $(this).removeClass('up-hover');
-        $(this).addClass('up-hover-after');
-    }, function () {
-        // out
-        $(this).removeClass('up-hover-after');
-        $(this).addClass('up-hover');
-    }
-    );
-
-    $('.btn-up').click(function (e) { 
-        e.preventDefault();
-        
-        $('html,body').animate({
-            scrollTop:0},100);
-    });
-
-    $('.slide-up').hide();
-    $(window).scroll(function(){
-        if($(window).scrollTop()>200){
-            $('.slide-up').fadeIn();
-        }
-        else{
-            $('.slide-up').fadeOut();
-        }
-    });
-});
   </script>
 </body>
 
